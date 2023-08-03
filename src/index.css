@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sl-container {
+    @apply relative xl:max-w-[1440px] lg:max-w-[1240px] md:max-w-[960px] max-w-[540px] w-full md:px-6 sm:px-4 px-2 mx-auto z-[1];
+  }
+
+  .sl-nav:hover li {
+    @apply opacity-50 transition-all duration-500 ease-in-out;
+  }
+  .sl-nav li:hover {
+    @apply opacity-100 transition-all duration-500 ease-in-out;
+  }
+
+  /* ANIMATION */
+  .sl-animated-md {
+    @apply transition duration-300 before:transition before:duration-300 after:transition after:duration-300;
+  }
+
+  .sl-animated-lg {
+    @apply transition-all duration-500 ease-in-out before:transition-all before:duration-500 before:ease-in-out after:transition-all after:duration-500 after:ease-in-out;
+  }
+
+  .sl-animated-xl {
+    @apply transition-all duration-700 ease-in-out before:transition-all before:duration-700 before:ease-in-out after:transition-all after:duration-700 after:ease-in-out;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-900 text-sky-50;
+  }
+  a,
+  button {
+    @apply inline-block cursor-pointer;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply w-full outline-none bg-transparent;
+  }
+
+  img {
+    @apply w-full h-full;
+  }
+}
+
+@layer utilities {
+  /* .sl-nav:hover li {
+    opacity: 0.5;
+  }
+  .sl-nav li:hover {
+    opacity: 1;
+  } */
+}
