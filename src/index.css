@@ -49,10 +49,7 @@
 }
 
 @layer utilities {
-  /* .sl-nav:hover li {
-    opacity: 0.5;
+  body::-webkit-scrollbar {
+    width: 0;
   }
-  .sl-nav li:hover {
-    opacity: 1;
-  } */
 }
