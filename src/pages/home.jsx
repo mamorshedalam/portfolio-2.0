@@ -21,6 +21,8 @@ import psIcon from "/icons/ps.svg";
 import lrIcon from "/icons/lr.svg";
 import xdIcon from "/icons/xd.svg";
 import filmoraIcon from "/icons/filmora.svg";
+import locationIcon from "/icons/location.svg";
+import globeIcon from "/icons/globe.svg";
 
 
 export default function Home() {
@@ -121,15 +123,15 @@ export default function Home() {
                <section id="work" className="py-40">
                     <div className="sl-container space-y-12">
                          <div className="text-center">
-                              <span className="text-xl opacity-70">EVERY PROJECT IS A NEW CHALLENGE</span>
+                              <span className="text-xl opacity-70">EVERY PROJECT IS A NEW CHALLENGE.</span>
                               <h2 className="font-bold tracking-wide text-7xl">Projects & Work</h2>
                          </div>
                          <ul className="flex flex-wrap gap-6 font-semibold">
                               <li className="">Filter by</li>
                               <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">All</span></li>
-                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Front-End</span></li>
-                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Back-End</span></li>
-                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Full-Stack</span></li>
+                              <li className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">04</span>// <span className="text-sky-50 opacity-70 group-hover:opacity-100 sl-animated-xl">Front-End</span></li>
+                              <li className="relative text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Back-End</span></li>
+                              <li className="relative text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Full-Stack</span></li>
                          </ul>
                          <div className="flex flex-wrap justify-center">
                               {workArray && workArray.map((project, index) => (
@@ -144,6 +146,40 @@ export default function Home() {
                                         </div>
                                    </a>
                               ))}
+                         </div>
+                    </div>
+               </section>
+
+               <section id="experience" className="py-40">
+                    <div className="sl-container">
+                         <div className="text-center">
+                              <span className="text-xl uppercase opacity-70">all places I go try to give my best.</span>
+                              <h2 className="font-bold tracking-wide text-7xl">Experience & Education</h2>
+                         </div>
+                         <div className="mt-9 w-2/3 mx-auto">
+                              <div>
+                                   <div className="flex flex-wrap justify-between bg-neutral-700 rounded font-semibold text-xl py-3 px-6 mb-4">
+                                        <h3>Web Designer @ Spinner Tech</h3>
+                                        <p>2022 - 2022 <button className="text-2xl ml-6 hover:text-orange-400">+</button></p>
+                                   </div>
+                                   <div className="bg-neutral-800 rounded space-y-4 px-9 py-6">
+                                        <div className="flex items-center">
+                                             <img src={locationIcon} alt="" className="h-4 w-fit mr-2" />
+                                             <span className="opacity-70 mr-6">Chattogram, Bangladesh</span>
+                                             <img src={globeIcon} alt="" className="h-4 w-fit mr-2" />
+                                             <a href="www.spinnertech.dev" className="opacity-70">spinnertech.dev</a>
+                                        </div>
+                                        <p>In Spinner Tech Ltd, I explore myself. And learn to work together in a team. I also learn to handle projects on an IT farm. I enjoyed my 3 months with some awesome projects and teammates.</p>
+                                        <ul className="flex flex-wrap items-center space-x-2 text-base">
+                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">JavaScript</li>
+                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">HTML5</li>
+                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">CSS3</li>
+                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">JQuery</li>
+                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">Photoshop</li>
+                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">illustrator</li>
+                                        </ul>
+                                   </div>
+                              </div>
                          </div>
                     </div>
                </section>
