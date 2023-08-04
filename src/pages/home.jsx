@@ -1,9 +1,63 @@
 import heroBg from "/images/hero-bg.png";
 import banner1 from "/images/banner-1.png";
+import jsIcon from "/icons/js.svg";
+import reactIcon from "/icons/react.svg";
+import nodeIcon from "/icons/node.svg";
+import expressIcon from "/icons/express.svg";
+import mongodbIcon from "/icons/mongodb.svg";
+import firebaseIcon from "/icons/firebase.svg";
+import tailwindIcon from "/icons/tailwind.svg";
+import html5Icon from "/icons/html5.svg";
+import bootstrapIcon from "/icons/bootstrap.svg";
+import css3Icon from "/icons/css3.svg";
+import gitIcon from "/icons/git.svg";
+import vsIcon from "/icons/vs.svg";
+import netlifyIcon from "/icons/netlify.svg";
+import figmaIcon from "/icons/figma.svg";
+import chromeIcon from "/icons/chrome.svg";
+import msIcon from "/icons/ms.svg";
+import aiIcon from "/icons/ai.svg";
+import psIcon from "/icons/ps.svg";
+import lrIcon from "/icons/lr.svg";
+import xdIcon from "/icons/xd.svg";
+import filmoraIcon from "/icons/filmora.svg";
 
 
 export default function Home() {
-
+     const programArray = [
+          { name: "JavaScript", icon: jsIcon },
+          { name: "React", icon: reactIcon },
+          { name: "Node", icon: nodeIcon },
+          { name: "Express", icon: expressIcon },
+          { name: "MongoDB", icon: mongodbIcon },
+          { name: "Firebase", icon: firebaseIcon },
+          { name: "TailwindCSS", icon: tailwindIcon },
+          { name: "HTML5", icon: html5Icon },
+          { name: "Bootstrap", icon: bootstrapIcon },
+          { name: "CSS3", icon: css3Icon }
+     ];
+     const toolArray = [
+          { name: "Git", icon: gitIcon },
+          { name: "VS Code", icon: vsIcon },
+          { name: "Netlify", icon: netlifyIcon },
+          { name: "Figma", icon: figmaIcon },
+          { name: "Chrome Dev", icon: chromeIcon }
+     ];
+     const designArray = [
+          { name: "MS Office", icon: msIcon },
+          { name: "illustrator", icon: aiIcon },
+          { name: "Photoshop", icon: psIcon },
+          { name: "Lightroom", icon: lrIcon },
+          { name: "Adobe Xd", icon: xdIcon },
+          { name: "Filmora", icon: filmoraIcon }
+     ];
+     const workArray = [
+          { name: "X Metaverse Pro", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677904916/portfolio/Screenshot_65_bqszyy.png" },
+          { name: "Monetars", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677904915/portfolio/Screenshot_34551_qg2ugh.png" },
+          { name: "GVI", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747952/portfolio/portfolio-11_lbsih3.jpg" },
+          { name: "Save The Student", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747950/portfolio/portfolio-9_vhquum.jpg" },
+          { name: "Video Quiz", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747951/portfolio/portfolio-15_tm0mfc.jpg" }
+     ]
 
      return (
           <>
@@ -14,23 +68,23 @@ export default function Home() {
                     </div>
                </section>
 
-               <section id="about">
-                    <div className="sl-container grid grid-cols-2 items-center gap-6 py-40">
-                         <div className="">
+               <section id="about" className="py-40">
+                    <div className="sl-container grid grid-cols-2 items-center gap-6">
+                         <div>
                               <h1 className="font-bold tracking-wide text-6xl mb-4">Hi, I'm Morshed Alam <br /> Web Developer</h1>
                               <p className="text-xl text-orange-400">// <span className="text-sky-50 opacity-70">Front-End Developer</span> // <span className="text-sky-50 opacity-70">Node Fan</span> // <span className="text-sky-50 opacity-70">JavaScript Expert</span></p>
                          </div>
-                         <div className="text-lg space-y-4">
+                         <div className="space-y-4">
                               <p>I'm working as a Web Developer since 2019. I have developed a strong understanding of Web Development and related Technology. I always tried to think out of the box & bring something creative through Hard Work. And love working with Team.</p>
                               <p>My expertise in Front-End Technologies also includes <i>responsive design, cross-browser compatibility, and SEO-optimised code.</i> I take pride in staying up-to-date with the latest trends and best practices in Front-End Development to ensure that I can deliver top-quality work to my Clients.</p>
                          </div>
                     </div>
                </section>
 
-               <section id="expertise" className=" py-40 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner1})` }}>
-                    <div className="sl-container text-lg space-y-9">
+               <section id="expertise" className="py-40 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner1})` }}>
+                    <div className="sl-container space-y-9">
                          <div className="text-center">
-                              <span className="text-xl opacity-70">A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST.</span>
+                              <span className="text-xl opacity-70 uppercase">A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST.</span>
                               <h2 className="font-bold tracking-wide text-7xl">Skills & Expertise</h2>
                          </div>
                          <div className="w-2/3 text-center mx-auto space-y-2">
@@ -40,95 +94,56 @@ export default function Home() {
                          </div>
                          <div className="space-y-6">
                               <ul className="flex flex-wrap justify-center mb-4">
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/js.svg" alt="" className="h-20" />
-                                        <h3>JavaScript</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/react.svg" alt="" className="h-20" />
-                                        <h3>React</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/node.svg" alt="" className="h-20" />
-                                        <h3>Node</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/express.svg" alt="" className="h-20" />
-                                        <h3>Express</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/mongodb.svg" alt="" className="h-20" />
-                                        <h3>MongoDB</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/firebase.svg" alt="" className="h-20" />
-                                        <h3>Firebase</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/tailwind.svg" alt="" className="h-20" />
-                                        <h3>TailwindCSS</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/html5.svg" alt="" className="h-20" />
-                                        <h3>HTML5</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/bootstrap.svg" alt="" className="h-20" />
-                                        <h3>Bootstrap</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/css3-alt.svg" alt="" className="h-20" />
-                                        <h3>CSS3</h3>
-                                   </li>
+                                   {programArray && programArray.map((item, index) => (
+                                        <li key={index} className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
+                                             <img src={item.icon} alt={item.name} className="w-fit h-20 mx-auto" />
+                                             <h3>{item.name}</h3>
+                                        </li>))}
                               </ul>
                               <ul className="flex flex-wrap justify-center mb-4">
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/git.svg" alt="" className="h-20" />
-                                        <h3>Git</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/vs.svg" alt="" className="h-20" />
-                                        <h3>VS Code</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/netlify.svg" alt="" className="h-20" />
-                                        <h3>Netlify</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/chrome.svg" alt="" className="w-fit h-20 mx-auto" />
-                                        <h3>Chrome Dev</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/figma.svg" alt="" className="h-20" />
-                                        <h3>Figma</h3>
-                                   </li>
+                                   {toolArray && toolArray.map((item, index) => (
+                                        <li key={index} className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
+                                             <img src={item.icon} alt={item.name} className="w-fit h-20 mx-auto" />
+                                             <h3>{item.name}</h3>
+                                        </li>))}
                               </ul>
                               <ul className="flex flex-wrap justify-center mb-4">
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/ms.svg" alt="" className="h-20" />
-                                        <h3>MS Office</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/ai.svg" alt="" className="h-20" />
-                                        <h3>illustrator</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/ps.svg" alt="" className="h-20" />
-                                        <h3>Photoshop</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/lr.svg" alt="" className="h-20" />
-                                        <h3>Lightroom</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/xd.svg" alt="" className="h-20" />
-                                        <h3>Adobe Xd</h3>
-                                   </li>
-                                   <li className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                        <img src="/public/icons/filmora.svg" alt="" className="h-20" />
-                                        <h3>Filmora</h3>
-                                   </li>
+                                   {designArray && designArray.map((item, index) => (
+                                        <li key={index} className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
+                                             <img src={item.icon} alt={item.name} className="w-fit h-20 mx-auto" />
+                                             <h3>{item.name}</h3>
+                                        </li>))}
                               </ul>
+                         </div>
+                    </div>
+               </section>
+
+               <section id="work" className="py-40">
+                    <div className="sl-container space-y-12">
+                         <div className="text-center">
+                              <span className="text-xl opacity-70">EVERY PROJECT IS A NEW CHALLENGE</span>
+                              <h2 className="font-bold tracking-wide text-7xl">Projects & Work</h2>
+                         </div>
+                         <ul className="flex flex-wrap gap-6 font-semibold">
+                              <li className="">Filter by</li>
+                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">All</span></li>
+                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Front-End</span></li>
+                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Back-End</span></li>
+                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Full-Stack</span></li>
+                         </ul>
+                         <div className="flex flex-wrap justify-center">
+                              {workArray && workArray.map((project, index) => (
+                                   <a className="group w-1/3 px-4 mb-6">
+                                        <div className="overflow-hidden rounded-t"><img src={project.img} alt="" className="h-60 group-hover:scale-110 sl-animated-xl" /></div>
+                                        <div className="bg-neutral-800 rounded-b px-9 py-6">
+                                             <h3 className="font-bold text-2xl">{project.name}</h3>
+                                             <div className="relative h-6">
+                                                  <h4 className="absolute opacity-70 group-hover:top-0 group-hover:opacity-0 group-hover:invisible sl-animated-xl">{project.category}</h4>
+                                                  <span className="absolute opacity-0 invisible group-hover:top-0 group-hover:opacity-70 group-hover:visible hover:opacity-100 hover:text-orange-400 sl-animated-xl">Show Project -</span>
+                                             </div>
+                                        </div>
+                                   </a>
+                              ))}
                          </div>
                     </div>
                </section>

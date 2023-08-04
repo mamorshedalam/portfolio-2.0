@@ -30,7 +30,7 @@
 
 @layer base {
   body {
-    @apply bg-neutral-900 text-sky-50;
+    @apply bg-neutral-900 text-sky-50 text-lg;
   }
   a,
   button {
