@@ -9,7 +9,7 @@ export default function RootLayout() {
 
      return (
           <>
-               <header className="fixed flex flex-wrap justify-between items-center w-full px-12 py-4 z-50">
+               <header className="fixed flex flex-wrap justify-between items-center w-full backdrop-blur-sm px-12 py-4 z-50">
                     <Link to={`/`} className="uppercase font-bold tracking-wider text-2xl"><span className="font-black tracking-widest text-orange-400">#</span> morshed alam</Link>
                     <nav className="font-semibold text-lg">
                          <ul className="sl-nav flex item-center gap-9">
