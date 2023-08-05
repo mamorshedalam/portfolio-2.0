@@ -21,8 +21,7 @@ import psIcon from "/icons/ps.svg";
 import lrIcon from "/icons/lr.svg";
 import xdIcon from "/icons/xd.svg";
 import filmoraIcon from "/icons/filmora.svg";
-import locationIcon from "/icons/location.svg";
-import globeIcon from "/icons/globe.svg";
+import Collapse from "../components/collapse";
 
 
 export default function Home() {
@@ -59,6 +58,11 @@ export default function Home() {
           { name: "GVI", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747952/portfolio/portfolio-11_lbsih3.jpg" },
           { name: "Save The Student", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747950/portfolio/portfolio-9_vhquum.jpg" },
           { name: "Video Quiz", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747951/portfolio/portfolio-15_tm0mfc.jpg" }
+     ];
+     const experience = [
+          { designation: "Web Developer", company: "Fiverr", website: "fiverr.com", duration: "2021 - Present", location: "Remote", keyword: ["JavaScript", "React", "Node", "Firebase", "TailwindCSS", "Figma"], description: "It's part of my Diploma course. I learn how an organization works and manages manpower. I got the opportunity to lead a team during the training period. I also learn about communication networks and media over there." },
+          { designation: "Intern of Telecommunications", company: "Bangladesh Railway", website: "railway.gov.bd", duration: "2021 - 2022", location: "Chattogram, Bangladesh", keyword: ["Networking", "CTC"], description: "It's part of my Diploma course. I learn how an organization works and manages manpower. I got the opportunity to lead a team during the training period. I also learn about communication networks and media over there." },
+          { designation: "Web Designer", company: "Spinner Tech Ltd", website: "spinnertech.dev", duration: "2021 - 2021", location: "Chattogram, Bangladesh", keyword: ["JavaScript", "HTML5", "CSS3", "JQuery", "PhotoShop", "illustrator"], description: "In Spinner Tech Ltd, I explore myself. And learn to work together in a team. I also learn to handle projects on an IT farm. I enjoyed my 3 months with some awesome projects and teammates." },
      ]
 
      return (
@@ -156,28 +160,27 @@ export default function Home() {
                               <span className="text-xl uppercase opacity-70">all places I go try to give my best.</span>
                               <h2 className="font-bold tracking-wide text-7xl">Experience & Education</h2>
                          </div>
-                         <div className="mt-9 w-2/3 mx-auto">
-                              <div>
-                                   <div className="flex flex-wrap justify-between bg-neutral-700 rounded font-semibold text-xl py-3 px-6 mb-4">
-                                        <h3>Web Designer @ Spinner Tech</h3>
-                                        <p>2022 - 2022 <button className="text-2xl ml-6 hover:text-orange-400">+</button></p>
+                         <div className="w-2/3 space-y-2 mt-12 mx-auto">{experience && experience.map((item, index) => (<Collapse key={index} obj={item} />))}</div>
+                         <div className="flex flex-wrap justify-center mt-6">
+                              <div className="w-1/3 font-semibold px-2 mb-6">
+                                   <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
+                                        <h3 className="text-xl">Computer Science & Technology</h3>
+                                        <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Wuhan Institute of Technology, China</span></h4>
+                                        <p className="flex justify-between opacity-70"><span>2023 - 2027</span><span>Running</span></p>
                                    </div>
-                                   <div className="bg-neutral-800 rounded space-y-4 px-9 py-6">
-                                        <div className="flex items-center">
-                                             <img src={locationIcon} alt="" className="h-4 w-fit mr-2" />
-                                             <span className="opacity-70 mr-6">Chattogram, Bangladesh</span>
-                                             <img src={globeIcon} alt="" className="h-4 w-fit mr-2" />
-                                             <a href="www.spinnertech.dev" className="opacity-70">spinnertech.dev</a>
-                                        </div>
-                                        <p>In Spinner Tech Ltd, I explore myself. And learn to work together in a team. I also learn to handle projects on an IT farm. I enjoyed my 3 months with some awesome projects and teammates.</p>
-                                        <ul className="flex flex-wrap items-center space-x-2 text-base">
-                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">JavaScript</li>
-                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">HTML5</li>
-                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">CSS3</li>
-                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">JQuery</li>
-                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">Photoshop</li>
-                                             <li className="rounded-full bg-neutral-950/70 px-4 py-1">illustrator</li>
-                                        </ul>
+                              </div>
+                              <div className="w-1/3 font-semibold px-2 mb-6">
+                                   <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
+                                        <h3 className="text-xl">Computer Science</h3>
+                                        <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Universiti Teknologi PETRONAS, Malaysia</span></h4>
+                                        <p className="flex justify-between opacity-70"><span>2017 - 2021</span><span>Drop</span></p>
+                                   </div>
+                              </div>
+                              <div className="w-1/3 font-semibold px-2 mb-6">
+                                   <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
+                                        <h3 className="text-xl">Computer Technology</h3>
+                                        <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Chittagong Polytechnic Institute, Bangladesh</span></h4>
+                                        <p className="flex justify-between opacity-70"><span>2022 - 2023</span><span>3.51</span></p>
                                    </div>
                               </div>
                          </div>
