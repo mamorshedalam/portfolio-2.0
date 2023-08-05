@@ -1,7 +1,12 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-
 import { Link, Outlet } from "react-router-dom";
-
+import facebookIcon from "/icons/facebook.svg";
+import linkedinIcon from "/icons/linkedin.svg";
+import instagramIcon from "/icons/instagram.svg";
+import twitterIcon from "/icons/twitter.svg";
+import githubIcon from "/icons/github.svg";
+import mailIcon from "/icons/mail.svg";
+import weChatImg from "/images/weChat.jpg";
+import whatsappImg from "/images/whatsapp.jpg";
 
 
 export default function RootLayout() {
@@ -23,9 +28,24 @@ export default function RootLayout() {
                     </nav>
                </header>
 
-               <Outlet />
+               <main className="relative">
+                    <Outlet />
+               </main>
 
-               <footer className=""></footer>
+               <footer className="text-center pb-10">
+                    <ul className="flex flex-wrap justify-center gap-4 mb-5">
+                         <li><a href="https://www.linkedin.com/in/mamorshedalam" className="block w-10 h-10 rounded-full border-2 border-sky-50 p-2.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={linkedinIcon} alt="" className="h-full" /></a></li>
+                         <li><a href="https://github.com/mamorshedalam" className="block w-10 h-10 rounded-full border-2 border-sky-50 p-2.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={githubIcon} alt="" className="h-full" /></a></li>
+                         <li><a href="https://twitter.com/mamorshedalam2" className="block w-10 h-10 rounded-full border-2 border-sky-50 p-2.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={twitterIcon} alt="" className="h-full" /></a></li>
+                         <li><a href="https://www.facebook.com/ma.morshedalambd" className="block w-10 h-10 rounded-full border-2 border-sky-50 p-2.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={facebookIcon} alt="" className="h-full" /></a></li>
+                         <li><a href="https://www.instagram.com/mamorshedalam/" className="block w-10 h-10 rounded-full border-2 border-sky-50 p-2.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={instagramIcon} alt="" className="h-full" /></a></li>
+                         <li><a href="mailto:mamorshedalam@outlook.com" className="block w-10 h-10 rounded-full border-2 border-sky-50 p-2.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={mailIcon} alt="" className="h-full" /></a></li>
+                    </ul>
+                    <div className="flex flex-wrap justify-center gap-3">
+                         <img src={weChatImg} alt="" className="w-20 rounded" />
+                         <img src={whatsappImg} alt="" className="w-20 rounded" />
+                    </div>
+               </footer>
           </>
      )
 } 

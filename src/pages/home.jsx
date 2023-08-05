@@ -1,5 +1,6 @@
 import heroBg from "/images/hero-bg.png";
 import banner1 from "/images/banner-1.png";
+import banner2 from "/images/banner-2.png";
 import jsIcon from "/icons/js.svg";
 import reactIcon from "/icons/react.svg";
 import nodeIcon from "/icons/node.svg";
@@ -74,7 +75,7 @@ export default function Home() {
                     </div>
                </section>
 
-               <section id="about" className="py-40">
+               <section id="about" className="pt-40">
                     <div className="sl-container grid grid-cols-2 items-center gap-6">
                          <div>
                               <h1 className="font-bold tracking-wide text-6xl mb-4">Hi, I'm Morshed Alam <br /> Web Developer</h1>
@@ -124,7 +125,7 @@ export default function Home() {
                     </div>
                </section>
 
-               <section id="work" className="py-40">
+               <section id="work" className="py-20">
                     <div className="sl-container space-y-12">
                          <div className="text-center">
                               <span className="text-xl opacity-70">EVERY PROJECT IS A NEW CHALLENGE.</span>
@@ -154,7 +155,7 @@ export default function Home() {
                     </div>
                </section>
 
-               <section id="experience" className="py-40">
+               <section id="experience" className="py-40 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner2})` }}>
                     <div className="sl-container">
                          <div className="text-center">
                               <span className="text-xl uppercase opacity-70">all places I go try to give my best.</span>
@@ -173,17 +174,25 @@ export default function Home() {
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
                                         <h3 className="text-xl">Computer Science</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Universiti Teknologi PETRONAS, Malaysia</span></h4>
-                                        <p className="flex justify-between opacity-70"><span>2017 - 2021</span><span>Drop</span></p>
+                                        <p className="flex justify-between opacity-70"><span>2022 - 2023</span><span>Drop</span></p>
                                    </div>
                               </div>
                               <div className="w-1/3 font-semibold px-2 mb-6">
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
                                         <h3 className="text-xl">Computer Technology</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Chittagong Polytechnic Institute, Bangladesh</span></h4>
-                                        <p className="flex justify-between opacity-70"><span>2022 - 2023</span><span>3.51</span></p>
+                                        <p className="flex justify-between opacity-70"><span>2017 - 2021</span><span>3.51</span></p>
                                    </div>
                               </div>
                          </div>
+                    </div>
+               </section>
+
+               <section className="relative h-40">
+                    <div className="absolute w-2/3 left-1/2 -translate-x-1/2 bottom-1/2 flex flex-wrap justify-between items-center gap-4 bg-neutral-800 px-9 py-12 rounded mx-auto">
+                         <h2 className="font-black tracking-wider text-4xl">Start a project</h2>
+                         <p className="w-1/2 text-center">Interested in working together? We should queue up a time to chat. We can cook something great.</p>
+                         <a href="" className="rounded-full border border-sky-50 px-4 py-2 hover:text-orange-400 hover:border-orange-400 sl-animated-xl">Let's do this</a>
                     </div>
                </section>
           </>
