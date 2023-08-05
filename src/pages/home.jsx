@@ -70,16 +70,16 @@ export default function Home() {
           <>
                <section className="text-center h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: `url(${heroBg})` }}>
                     <div className="sl-container h-full flex flex-col justify-center">
-                         <h2 className="font-black uppercase tracking-wide text-7xl mb-6">front-end developer</h2>
-                         <p className="text-2xl text-orange-400"><span className="text-sky-50 opacity-70">Love to Play with codes in the arena of</span> JavaScript</p>
+                         <h2 className="font-black uppercase tracking-wide xl:text-7xl text-5xl xl:mb-6 mb-4">front-end developer</h2>
+                         <p className="xl:text-2xl text-xl text-orange-400"><span className="text-sky-50 opacity-70">Love to Play with codes in the arena of</span> JavaScript</p>
                     </div>
                </section>
 
-               <section id="about" className="pt-40">
-                    <div className="sl-container grid grid-cols-2 items-center gap-6">
+               <section id="about" className="xl:pt-40 pt-28">
+                    <div className="sl-container grid grid-cols-2 items-center xl:gap-6 gap-4">
                          <div>
-                              <h1 className="font-bold tracking-wide text-6xl mb-4">Hi, I'm Morshed Alam <br /> Web Developer</h1>
-                              <p className="text-xl text-orange-400">// <span className="text-sky-50 opacity-70">Front-End Developer</span> // <span className="text-sky-50 opacity-70">Node Fan</span> // <span className="text-sky-50 opacity-70">JavaScript Expert</span></p>
+                              <h1 className="font-bold tracking-wide xl:text-6xl text-4xl mb-4">Hi, I'm Morshed Alam <br /> Web Developer</h1>
+                              <p className="xl:text-xl text-lg text-orange-400">// <span className="text-sky-50 opacity-70">Front-End Developer</span> // <span className="text-sky-50 opacity-70">Node Fan</span> // <span className="text-sky-50 opacity-70">JavaScript Expert</span></p>
                          </div>
                          <div className="space-y-4">
                               <p>I'm working as a Web Developer since 2019. I have developed a strong understanding of Web Development and related Technology. I always tried to think out of the box & bring something creative through Hard Work. And love working with Team.</p>
@@ -88,11 +88,11 @@ export default function Home() {
                     </div>
                </section>
 
-               <section id="expertise" className="py-40 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner1})` }}>
-                    <div className="sl-container space-y-9">
+               <section id="expertise" className="xl:py-40 py-28 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner1})` }}>
+                    <div className="sl-container xl:space-y-9 space-y-6">
                          <div className="text-center">
-                              <span className="text-xl opacity-70 uppercase">A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST.</span>
-                              <h2 className="font-bold tracking-wide text-7xl">Skills & Expertise</h2>
+                              <span className="xl:text-xl text-base opacity-70 uppercase">A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST.</span>
+                              <h2 className="font-bold tracking-wide xl:text-7xl text-5xl">Skills & Expertise</h2>
                          </div>
                          <div className="w-2/3 text-center mx-auto space-y-2">
                               <p>The main area of expertise is Front-End Development (client side of the web).</p>
@@ -102,22 +102,22 @@ export default function Home() {
                          <div className="space-y-6">
                               <ul className="flex flex-wrap justify-center mb-4">
                                    {programArray && programArray.map((item, index) => (
-                                        <li key={index} className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                             <img src={item.icon} alt={item.name} className="w-fit h-20 mx-auto" />
+                                        <li key={index} className="xl:w-32 w-24 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
+                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 h-14 mx-auto" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>
                               <ul className="flex flex-wrap justify-center mb-4">
                                    {toolArray && toolArray.map((item, index) => (
-                                        <li key={index} className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                             <img src={item.icon} alt={item.name} className="w-fit h-20 mx-auto" />
+                                        <li key={index} className="xl:w-32 w-24 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
+                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 h-14 mx-auto" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>
                               <ul className="flex flex-wrap justify-center mb-4">
                                    {designArray && designArray.map((item, index) => (
-                                        <li key={index} className="w-32 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
-                                             <img src={item.icon} alt={item.name} className="w-fit h-20 mx-auto" />
+                                        <li key={index} className="xl:w-32 w-24 cursor-pointer text-center font-semibold space-y-2 px-4 mb-4">
+                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 h-14 mx-auto" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>
@@ -125,11 +125,11 @@ export default function Home() {
                     </div>
                </section>
 
-               <section id="work" className="py-20">
-                    <div className="sl-container space-y-12">
+               <section id="work" className="xl:py-20 py-16">
+                    <div className="sl-container xl:space-y-12 space-y-9">
                          <div className="text-center">
-                              <span className="text-xl opacity-70">EVERY PROJECT IS A NEW CHALLENGE.</span>
-                              <h2 className="font-bold tracking-wide text-7xl">Projects & Work</h2>
+                              <span className="xl:text-xl text-base opacity-70">EVERY PROJECT IS A NEW CHALLENGE.</span>
+                              <h2 className="font-bold tracking-wide xl:text-7xl text-5xl">Projects & Work</h2>
                          </div>
                          <ul className="flex flex-wrap gap-6 font-semibold">
                               <li className="">Filter by</li>
@@ -141,9 +141,9 @@ export default function Home() {
                          <div className="flex flex-wrap justify-center">
                               {workArray && workArray.map((project, index) => (
                                    <a className="group w-1/3 px-4 mb-6">
-                                        <div className="overflow-hidden rounded-t"><img src={project.img} alt="" className="h-60 group-hover:scale-110 sl-animated-xl" /></div>
-                                        <div className="bg-neutral-800 rounded-b px-9 py-6">
-                                             <h3 className="font-bold text-2xl">{project.name}</h3>
+                                        <div className="overflow-hidden rounded-t"><img src={project.img} alt="" className="xl:h-60 h-40 group-hover:scale-110 sl-animated-xl" /></div>
+                                        <div className="bg-neutral-800 rounded-b xl:px-9 px-6 xl:py-6 py-4">
+                                             <h3 className="font-bold xl:text-2xl text-xl">{project.name}</h3>
                                              <div className="relative h-6">
                                                   <h4 className="absolute opacity-70 group-hover:top-0 group-hover:opacity-0 group-hover:invisible sl-animated-xl">{project.category}</h4>
                                                   <span className="absolute opacity-0 invisible group-hover:top-0 group-hover:opacity-70 group-hover:visible hover:opacity-100 hover:text-orange-400 sl-animated-xl">Show Project -</span>
@@ -155,43 +155,43 @@ export default function Home() {
                     </div>
                </section>
 
-               <section id="experience" className="py-40 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner2})` }}>
+               <section id="experience" className="xl:py-40 py-28 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner2})` }}>
                     <div className="sl-container">
                          <div className="text-center">
-                              <span className="text-xl uppercase opacity-70">all places I go try to give my best.</span>
-                              <h2 className="font-bold tracking-wide text-7xl">Experience & Education</h2>
+                              <span className="xl:text-xl text-base uppercase opacity-70">all places I go try to give my best.</span>
+                              <h2 className="font-bold tracking-wide xl:text-7xl text-5xl">Experience & Education</h2>
                          </div>
-                         <div className="w-2/3 space-y-2 mt-12 mx-auto">{experience && experience.map((item, index) => (<Collapse key={index} obj={item} />))}</div>
+                         <div className="xl:w-2/3 space-y-2 xl:mt-12 mt-9 mx-auto">{experience && experience.map((item, index) => (<Collapse key={index} obj={item} />))}</div>
                          <div className="flex flex-wrap justify-center mt-6">
                               <div className="w-1/3 font-semibold px-2 mb-6">
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
-                                        <h3 className="text-xl">Computer Science & Technology</h3>
+                                        <h3 className="xl:text-xl text-lg">Computer Science & Technology</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Wuhan Institute of Technology, China</span></h4>
                                         <p className="flex justify-between opacity-70"><span>2023 - 2027</span><span>Running</span></p>
                                    </div>
                               </div>
                               <div className="w-1/3 font-semibold px-2 mb-6">
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
-                                        <h3 className="text-xl">Computer Science</h3>
+                                        <h3 className="xl:text-xl text-lg">Computer Science</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Universiti Teknologi PETRONAS, Malaysia</span></h4>
                                         <p className="flex justify-between opacity-70"><span>2022 - 2023</span><span>Drop</span></p>
                                    </div>
                               </div>
                               <div className="w-1/3 font-semibold px-2 mb-6">
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 px-6">
-                                        <h3 className="text-xl">Computer Technology</h3>
+                                        <h3 className="xl:text-xl text-lg">Computer Technology</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Chittagong Polytechnic Institute, Bangladesh</span></h4>
                                         <p className="flex justify-between opacity-70"><span>2017 - 2021</span><span>3.51</span></p>
                                    </div>
                               </div>
                          </div>
                     </div>
-               </section>
 
-               <section className="relative h-40">
-                    <div className="absolute w-2/3 left-1/2 -translate-x-1/2 bottom-1/2 flex flex-wrap justify-between items-center gap-4 bg-neutral-800 px-9 py-12 rounded mx-auto">
-                         <h2 className="font-black tracking-wider text-4xl">Start a project</h2>
-                         <p className="w-1/2 text-center">Interested in working together? We should queue up a time to chat. We can cook something great.</p>
+                    <div className="flex flex-wrap w-2/3 justify-between items-center bg-neutral-800 xl:px-9 px-6 xl:py-12 py-9 rounded xl:mt-40 mt-28 mx-auto">
+                         <div className="">
+                              <h2 className="font-black tracking-wider xl:text-4xl text-3xl">Start a project</h2>
+                              <p className="text-center">Interested in working together? We should queue up a time to chat.</p>
+                         </div>
                          <a href="" className="rounded-full border border-sky-50 px-4 py-2 hover:text-orange-400 hover:border-orange-400 sl-animated-xl">Let's do this</a>
                     </div>
                </section>

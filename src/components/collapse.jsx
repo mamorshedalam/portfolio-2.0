@@ -11,7 +11,7 @@ export default function Collapse({ obj }) {
           <div className="overflow-hidden">
                <div onClick={() => { show ? setShow(false) : setShow(true) }} className="flex flex-wrap justify-between bg-neutral-700 rounded font-semibold text-xl py-3 px-6 mb-4">
                     <h3>{obj.designation} @ {obj.company}</h3>
-                    <p>{obj.duration} <button className="text-2xl ml-6 hover:text-orange-400">+</button></p>
+                    <p>{obj.duration} <button className="xl:text-2xl text-xl xl:ml-6 ml-4 hover:text-orange-400">+</button></p>
                </div>
                <div className={`${show ? "h-auto bg-neutral-800 rounded space-y-4 px-9 py-6 mb-9 sl-animated-xl" : "h-0 sl-animated-xl"}`}>
                     <div className="flex items-center">

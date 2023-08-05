@@ -5,6 +5,7 @@ import instagramIcon from "/icons/instagram.svg";
 import twitterIcon from "/icons/twitter.svg";
 import githubIcon from "/icons/github.svg";
 import mailIcon from "/icons/mail.svg";
+import menuIcon from "/icons/menu.svg";
 import weChatImg from "/images/weChat.jpg";
 import whatsappImg from "/images/whatsapp.jpg";
 
@@ -14,10 +15,10 @@ export default function RootLayout() {
 
      return (
           <>
-               <header className="fixed flex flex-wrap justify-between items-center w-full backdrop-blur-sm px-12 py-4 z-50">
+               <header className="fixed flex flex-wrap justify-between items-center w-full backdrop-blur-sm bg-neutral-800 xl:px-12 px-6 py-4 z-50">
                     <Link to={`/`} className="uppercase font-bold tracking-wider text-2xl"><span className="font-black tracking-widest text-orange-400">#</span> morshed alam</Link>
-                    <nav className="font-semibold text-lg">
-                         <ul className="sl-nav flex item-center gap-9">
+                    <nav className="absolute left-0 top-full px-6 font-semibold text-lg z-40">
+                         <ul className="sl-nav flex lg:flex-row flex-col item-center backdrop-blur-sm xl:gap-9 lg:gap-6 gap-4">
                               <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>home</Link></li>
                               <li><Link to={`#about`}><span className="font-black tracking-widest text-orange-400">//</span>about</Link></li>
                               <li><Link to={`#expertise`}><span className="font-black tracking-widest text-orange-400">//</span>expertise</Link></li>
@@ -26,6 +27,7 @@ export default function RootLayout() {
                               <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>contact</Link></li>
                          </ul>
                     </nav>
+                    <button><img src={menuIcon} alt="" className="" /></button>
                </header>
 
                <main className="relative">
