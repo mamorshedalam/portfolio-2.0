@@ -26,7 +26,7 @@ export default function RootLayout() {
                               <li><Link to={`#expertise`}><span className="font-black tracking-widest text-orange-400">//</span>expertise</Link></li>
                               <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>work</Link></li>
                               <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>experience</Link></li>
-                              <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>contact</Link></li>
+                              <li><Link to={`/contact`}><span className="font-black tracking-widest text-orange-400">//</span>contact</Link></li>
                          </ul>
                     </nav>
                     <button onClick={() => { show ? setShow(false) : setShow(true) }} className="lg:hidden block"><img src={menuIcon} alt="" className="xs:scale-100 scale-90" /></button>
