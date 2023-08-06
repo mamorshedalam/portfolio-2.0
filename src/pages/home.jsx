@@ -23,6 +23,7 @@ import lrIcon from "/icons/lr.svg";
 import xdIcon from "/icons/xd.svg";
 import filmoraIcon from "/icons/filmora.svg";
 import Collapse from "../components/collapse";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -140,7 +141,7 @@ export default function Home() {
                          </ul>
                          <div className="flex flex-wrap justify-center">
                               {workArray && workArray.map((project, index) => (
-                                   <a key={index} className="group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
+                                   <Link to="/project" key={index} className="group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
                                         <div className="overflow-hidden rounded-t"><img src={project.img} alt="" className="xl:h-60 lg:h-40 md:h-60 w-full group-hover:scale-110 sl-animated-xl" /></div>
                                         <div className="bg-neutral-800 rounded-b xl:px-9 sm:px-6 px-4 xl:py-6 sm:py-4 py-2">
                                              <h3 className="font-bold xl:text-2xl text-xl">{project.name}</h3>
@@ -149,7 +150,7 @@ export default function Home() {
                                                   <span className="absolute opacity-0 invisible group-hover:top-0 group-hover:opacity-70 group-hover:visible hover:opacity-100 hover:text-orange-400 sl-animated-xl">Show Project -</span>
                                              </div>
                                         </div>
-                                   </a>
+                                   </Link>
                               ))}
                          </div>
                     </div>
