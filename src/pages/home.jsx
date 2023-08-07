@@ -24,9 +24,18 @@ import xdIcon from "/icons/xd.svg";
 import filmoraIcon from "/icons/filmora.svg";
 import Collapse from "../components/collapse";
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 
 export default function Home() {
+     const effectRun = useRef(false)
+     const [projects, setProjects] = useState([])
+     const [filterArray, setFilterArray] = useState([]);
+     const [count, setCount] = useState({
+          frontEnd: 0,
+          backEnd: 0,
+          fullStack: 0
+     })
      const programArray = [
           { name: "JavaScript", icon: jsIcon },
           { name: "React", icon: reactIcon },
@@ -54,18 +63,40 @@ export default function Home() {
           { name: "Adobe Xd", icon: xdIcon },
           { name: "Filmora", icon: filmoraIcon }
      ];
-     const workArray = [
-          { name: "X Metaverse Pro", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677904916/portfolio/Screenshot_65_bqszyy.png" },
-          { name: "Monetars", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677904915/portfolio/Screenshot_34551_qg2ugh.png" },
-          { name: "GVI", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747952/portfolio/portfolio-11_lbsih3.jpg" },
-          { name: "Save The Student", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747950/portfolio/portfolio-9_vhquum.jpg" },
-          { name: "Video Quiz", category: "Front-End Development", img: "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747951/portfolio/portfolio-15_tm0mfc.jpg" }
-     ];
      const experience = [
           { designation: "Web Developer", company: "Fiverr", website: "fiverr.com", duration: "2021 - Present", location: "Remote", keyword: ["JavaScript", "React", "Node", "Firebase", "TailwindCSS", "Figma"], description: "It's part of my Diploma course. I learn how an organization works and manages manpower. I got the opportunity to lead a team during the training period. I also learn about communication networks and media over there." },
-          { designation: "Intern", company: "Bangladesh Railway", website: "railway.gov.bd", duration: "2021 - 2022", location: "Chattogram, Bangladesh", keyword: ["Networking", "CTC"], description: "It's part of my Diploma course. I learn how an organization works and manages manpower. I got the opportunity to lead a team during the training period. I also learn about communication networks and media over there." },
-          { designation: "Web Designer", company: "Spinner Tech Ltd", website: "spinnertech.dev", duration: "2021 - 2021", location: "Chattogram, Bangladesh", keyword: ["JavaScript", "HTML5", "CSS3", "JQuery", "PhotoShop", "illustrator"], description: "In Spinner Tech Ltd, I explore myself. And learn to work together in a team. I also learn to handle projects on an IT farm. I enjoyed my 3 months with some awesome projects and teammates." },
+          { designation: "Intern", company: "Bangladesh Railway", website: "railway.gov.bd", duration: "2021 - 2022", location: "Chattogram, Bangladesh", keyword: ["Networking", "CTC", "MS Office"], description: "It's part of my Diploma course. I learn how an organization works and manages manpower. I got the opportunity to lead a team during the training period. I also learn about communication networks and media over there." },
+          { designation: "Web Designer", company: "Spinner Tech Ltd", website: "spinnertech.dev", duration: "2021 - 2021", location: "Chattogram, Bangladesh", keyword: ["JavaScript", "JQuery", "Bootstrap", "Photoshop"], description: "In Spinner Tech Ltd, I explore myself. And learn to work together in a team. I also learn to handle projects on an IT farm. I enjoyed my 3 months with some awesome projects and teammates." },
      ]
+
+     useEffect(() => {
+          if (effectRun.current === true) {
+               fetch(`/JSON/work.JSON`)
+                    .then(res => res.json())
+                    .then(data => {
+                         setProjects(data);
+                         setFilterArray(data);
+
+                         for (const property in count) {
+                              const value = data.filter(project => project.keyword == property).length;
+                              setCount((prevCount) => {
+                                   return { ...prevCount, [property]: value }
+                              })
+                         }
+                    })
+          }
+          return () => { effectRun.current = true }
+     }, [])
+
+     const filterProject = (filterKey) => {
+          if (filterKey == "all") {
+               setFilterArray(projects);
+          } else {
+               const filterProjects = projects.filter((project) => project.keyword == filterKey)
+               setFilterArray(filterProjects);
+               console.log(count);
+          }
+     }
 
      return (
           <>
@@ -134,15 +165,15 @@ export default function Home() {
                          </div>
                          <ul className="flex flex-wrap md:gap-6 xs:gap-3 gap-2 font-semibold">
                               <li className="">Filter by</li>
-                              <li className="text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">All</span></li>
-                              <li className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">04</span>// <span className="text-sky-50 opacity-70 group-hover:opacity-100 sl-animated-xl">Front-End</span></li>
-                              <li className="relative text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Back-End</span></li>
-                              <li className="relative text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Full-Stack</span></li>
+                              <li><button onClick={() => { filterProject("all") }} className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">{projects && projects.length < 9 ? `0${projects.length}` : projects.length}</span>// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">All</span></button></li>
+                              <li><button onClick={() => { filterProject("frontEnd") }} className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">{count.frontEnd && count.frontEnd < 9 ? `0${count.frontEnd}` : count.frontEnd}</span>// <span className="text-sky-50 opacity-70 group-hover:opacity-100 sl-animated-xl">Front-End</span></button></li>
+                              <li><button onClick={() => { filterProject("backEnd") }} className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">{count.backEnd && count.backEnd < 9 ? `0${count.backEnd}` : count.backEnd}</span>// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Back-End</span></button></li>
+                              <li><button onClick={() => { filterProject("fullStack") }} className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">{count.fullStack && count.fullStack < 9 ? `0${count.fullStack}` : count.fullStack}</span>// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">Full-Stack</span></button></li>
                          </ul>
                          <div className="flex flex-wrap justify-center">
-                              {workArray && workArray.map((project, index) => (
+                              {filterArray && filterArray.map((project, index) => (
                                    <Link to="/project" key={index} className="group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
-                                        <div className="overflow-hidden rounded-t"><img src={project.img} alt="" className="xl:h-60 lg:h-40 md:h-60 w-full group-hover:scale-110 sl-animated-xl" /></div>
+                                        <div className="overflow-hidden rounded-t"><img src={project.thumbnail} alt="" className="xl:h-60 lg:h-40 md:h-60 w-full group-hover:scale-110 sl-animated-xl" /></div>
                                         <div className="bg-neutral-800 rounded-b xl:px-9 sm:px-6 px-4 xl:py-6 sm:py-4 py-2">
                                              <h3 className="font-bold xl:text-2xl text-xl">{project.name}</h3>
                                              <div className="relative h-6">
@@ -191,7 +222,7 @@ export default function Home() {
                                    <h2 className="font-black tracking-wider xl:text-4xl md:text-3xl sm:text-2xl text-xl">Start a project</h2>
                                    <p>Interested in working together? We should queue up a time to chat.</p>
                               </div>
-                              <a href="" className="min-w-fit rounded-full border border-sky-50 xs:px-4 px-2 xs:py-2 py-1 ml-2 hover:text-orange-400 hover:border-orange-400 sl-animated-xl">Let's do this</a>
+                              <Link to={"/contact"} className="min-w-fit rounded-full border border-sky-50 xs:px-4 px-2 xs:py-2 py-1 ml-2 hover:text-orange-400 hover:border-orange-400 sl-animated-xl">Let's do this</Link>
                          </div>
                     </div>
                </section>

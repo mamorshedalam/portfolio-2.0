@@ -22,10 +22,10 @@ export default function RootLayout() {
                     <nav className={`${show ? "w-1/2 opacity-100 visible" : "w-0 opacity-0 invisible"} lg:relative absolute left-0 top-full lg:bg-transparent bg-neutral-800 lg:opacity-100 lg:visible lg:w-auto lg:h-auto h-screen lg:px-0 sm:px-6 px-4 lg:py-0 sm:py-4 font-semibold xs:text-lg text-base z-40 sl-animated-xl`}>
                          <ul className="sl-nav flex lg:flex-row flex-col item-center backdrop-blur-sm xl:gap-9 sm:gap-6 xs:gap-4 gap-3">
                               <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>home</Link></li>
-                              <li><Link to={`#about`}><span className="font-black tracking-widest text-orange-400">//</span>about</Link></li>
-                              <li><Link to={`#expertise`}><span className="font-black tracking-widest text-orange-400">//</span>expertise</Link></li>
-                              <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>work</Link></li>
-                              <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>experience</Link></li>
+                              <li><Link to={`/#about`}><span className="font-black tracking-widest text-orange-400">//</span>about</Link></li>
+                              <li><Link to={`/#expertise`}><span className="font-black tracking-widest text-orange-400">//</span>expertise</Link></li>
+                              <li><Link to={`/#work`}><span className="font-black tracking-widest text-orange-400">//</span>work</Link></li>
+                              <li><Link to={`/#experience`}><span className="font-black tracking-widest text-orange-400">//</span>experience</Link></li>
                               <li><Link to={`/contact`}><span className="font-black tracking-widest text-orange-400">//</span>contact</Link></li>
                          </ul>
                     </nav>

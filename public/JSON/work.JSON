@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "frontEnd",
+    "name": "X METAVERSE PRO",
+    "description": "X METAVERSE PRO is a super ecology built on Web 3.0 and DeFi 2.0 architecture. It is committed to building a new business world of 3D immersive metaverse - X METAWORLD. X METAVERSE PRO collaborates with global technology enthusiasts, financial experts, business elites, and Dao members to develop Metaverse Investment Bank, NFT Trading Market, Metaverse Mall, Alliance Reserve Bureau, Dex, GameFi, SocialFi, Metaverse City Cluster, and other ecological applications",
+    "technology": [
+      "JavaScript",
+      "Tailwind CSS",
+      "Chart JS",
+      "Lottie Animation"
+    ],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://www.xmetaversepro.com/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1677904916/portfolio/Screenshot_65_bqszyy.png"
+  },
+  {
+    "keyword": "frontEnd",
+    "name": "Monetars",
+    "description": "Monetars is one of the biggest online marketing platforms where you can earn money. Register and try games or apps. Take part in different surveys and earn money from home easily.",
+    "technology": ["JavaScript", "Tailwind CSS", "Chart JS"],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://monetars.com/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1677904915/portfolio/Screenshot_34551_qg2ugh.png"
+  },
+  {
+    "keyword": "frontEnd",
+    "name": "GVI",
+    "description": "Global Village International is one of Bangladesh's leading premium import, marketing, and distribution company. The website is for product portfolio and shares information about the company.",
+    "technology": ["JavaScript", "Bootstrap"],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://gvibd.com",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747952/portfolio/portfolio-11_lbsih3.jpg"
+  },
+  {
+    "keyword": "frontEnd",
+    "name": "Save The Student",
+    "description": "Save the Student is a student based tech platform which aims to provide multiple services via online such as E-learning, Gyan Baksho, Study Abroad, Business innovation, Fund raising. Save the Student saves the career of many students by developing their soft skills as well as standard of education through several ways.",
+    "technology": ["JavaScript", "Bootstrap"],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://savethestudent.net/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747950/portfolio/portfolio-9_vhquum.jpg"
+  },
+  {
+    "keyword": "frontEnd",
+    "name": "Video Quiz",
+    "description": "A Complete Single Page Application (SPA) made with Firebase using React JS.",
+    "technology": ["React JS", "Firebase"],
+    "category": "Front-End Development",
+    "sourceCode": "https://github.com/mamorshedalam/video-quiz",
+    "liveLink": "https://video-quiz.netlify.app/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747951/portfolio/portfolio-15_tm0mfc.jpg"
+  },
+  {
+    "keyword": "fullStack",
+    "name": "RMS",
+    "description": "RMS (Result Management System) is a program that use to manage academic examination results. It's can calculate marks and generate the result by itself. And can publish the result to the students. After entering every subject’s mark admin can public the result page to the student and students can search their results by themself.",
+    "technology": ["JavaScript", "Node JS", "MongoDB", "Axios"],
+    "category": "Full-Stack Development",
+    "sourceCode": "https://github.com/mamorshedalam/rms-v1",
+    "liveLink": "https://rms-v1.herokuapp.com/dashboard/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747946/portfolio/portfolio-5_dvnamm.jpg"
+  },
+  {
+    "keyword": "backEnd",
+    "name": "LMS",
+    "description": "LMS (Library Management System) is a smart web-based Library management system. LMS is so fast and easy to use. Here we can store our book data with images and authors by category. And we can filter books by authors and category.",
+    "technology": ["JavaScript", "Node JS", "MongoDB", "Axios"],
+    "category": "Back-End Development",
+    "sourceCode": "https://github.com/mamorshedalam/lms-v.1",
+    "liveLink": "https://lmv-v1.herokuapp.com/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1677747954/portfolio/portfolio-12_c89ago.jpg"
+  }
+]
