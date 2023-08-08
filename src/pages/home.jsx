@@ -71,7 +71,7 @@ export default function Home() {
 
      useEffect(() => {
           if (effectRun.current === true) {
-               fetch(`/JSON/work.JSON`)
+               fetch(`/JSON/projects.JSON`)
                     .then(res => res.json())
                     .then(data => {
                          setProjects(data);
@@ -172,7 +172,7 @@ export default function Home() {
                          </ul>
                          <div className="flex flex-wrap justify-center">
                               {filterArray && filterArray.map((project, index) => (
-                                   <Link to="/project" key={index} className="group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
+                                   <Link to={`project/${project.projectID}`} key={index} className="group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
                                         <div className="overflow-hidden rounded-t"><img src={project.thumbnail} alt="" className="xl:h-60 lg:h-40 md:h-60 w-full group-hover:scale-110 sl-animated-xl" /></div>
                                         <div className="bg-neutral-800 rounded-b xl:px-9 sm:px-6 px-4 xl:py-6 sm:py-4 py-2">
                                              <h3 className="font-bold xl:text-2xl text-xl">{project.name}</h3>

@@ -49,6 +49,9 @@
 }
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
   body::-webkit-scrollbar {
     width: 0;
   }
