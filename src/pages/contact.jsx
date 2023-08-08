@@ -15,6 +15,7 @@ export default function Contact() {
                .then(() => {
                     setShow(true);
                     setResponse(true);
+                    e.target.reset();
                }, () => {
                     setShow(false);
                     setResponse(false);
