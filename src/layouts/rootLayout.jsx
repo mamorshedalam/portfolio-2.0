@@ -23,14 +23,15 @@ export default function RootLayout() {
           <>
                <header className={`${show ? "bg-neutral-800" : "bg-transparent"} fixed flex flex-wrap justify-between items-center w-full backdrop-blur-sm xl:px-12 sm:px-6 px-4 xs:py-4 py-2 z-50 transition-all duration-700`}>
                     <Link to={`/`} className="uppercase font-bold tracking-wider xs:text-2xl text-xl"><span className="font-black tracking-widest text-orange-400">#</span> morshed alam</Link>
-                    <nav className={`${show ? "w-1/2 opacity-100 visible" : "w-0 opacity-0 invisible"} lg:relative absolute left-0 top-full lg:bg-transparent bg-neutral-800 lg:opacity-100 lg:visible lg:w-auto lg:h-auto h-screen lg:px-0 sm:px-6 px-4 lg:py-0 sm:py-4 font-semibold xs:text-lg text-base z-40 sl-animated-xl`}>
-                         <ul className="sl-nav flex lg:flex-row flex-col item-center backdrop-blur-sm xl:gap-9 sm:gap-6 xs:gap-4 gap-3">
-                              <li><a href={`/`}><span className="font-black tracking-widest text-orange-400">//</span>home</a></li>
+                    <nav className={`${show ? "opacity-100 visible" : "opacity-0 invisible"} lg:relative absolute left-0 top-full lg:bg-transparent bg-neutral-800/50 lg:opacity-100 lg:visible lg:w-auto w-full lg:h-auto h-screen font-semibold xs:text-lg text-base z-40 sl-animated-xl`}>
+                         <div onClick={() => { show ? setShow(false) : setShow(true) }} className="absolute inset-0 lg:hidden block w-full h-full z-20"></div>
+                         <ul className={`${show ? "w-1/2" : "w-0"} sl-nav relative flex lg:flex-row flex-col item-center lg:w-auto lg:h-auto h-screen lg:bg-transparent bg-neutral-800 xl:gap-9 sm:gap-6 xs:gap-4 gap-3 lg:px-0 sm:px-6 px-4 lg:py-0 sm:py-4 z-30`}>
+                              <li><Link to={`/`}><span className="font-black tracking-widest text-orange-400">//</span>home</Link></li>
                               <li><a href={`/#about`}><span className="font-black tracking-widest text-orange-400">//</span>about</a></li>
                               <li><a href={`/#expertise`}><span className="font-black tracking-widest text-orange-400">//</span>expertise</a></li>
                               <li><a href={`/#work`}><span className="font-black tracking-widest text-orange-400">//</span>work</a></li>
                               <li><a href={`/#experience`}><span className="font-black tracking-widest text-orange-400">//</span>experience</a></li>
-                              <li><a href={`/contact`}><span className="font-black tracking-widest text-orange-400">//</span>contact</a></li>
+                              <li><Link to={`/contact`}><span className="font-black tracking-widest text-orange-400">//</span>contact</Link></li>
                          </ul>
                     </nav>
                     <button onClick={() => { show ? setShow(false) : setShow(true) }} className="lg:hidden block"><img src={menuIcon} alt="" className="xs:scale-100 scale-90" /></button>

@@ -52,7 +52,13 @@
   html {
     scroll-behavior: smooth;
   }
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+  }
+
   body::-webkit-scrollbar {
-    width: 0;
+    display: none;
   }
 }
