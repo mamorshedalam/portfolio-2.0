@@ -1,25 +1,20 @@
 import { useNavigate, useParams } from "react-router-dom";
 import leftArrow from "/icons/left.svg";
-import projectImg from "/images/work/portfolio-1.jpg";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Project() {
      const navigate = useNavigate();
      const { projectID } = useParams()
-     const effectRun = useRef(false)
      const [project, setProject] = useState({});
 
      useEffect(() => {
-          if (effectRun.current === true) {
-               fetch(`/JSON/projects.JSON`)
-                    .then(res => res.json())
-                    .then(data => {
-                         const project = data.find(project => project.projectID == projectID);
-                         setProject(project);
-                    })
-          }
-          return () => { effectRun.current = true }
+          fetch(`/JSON/projects.JSON`)
+               .then(res => res.json())
+               .then(data => {
+                    const project = data.find(project => project.projectID == projectID);
+                    setProject(project);
+               })
      }, [])
 
 
@@ -50,7 +45,7 @@ export default function Project() {
                          </div>
                     </div>
                     <div className="md:space-y-9 xs:space-y-6 space-y-4">
-                         {project.screenshot.map((img, index) => (<img src={img} key={index} />))}
+                         {project.screenshot && project.screenshot.map((img, index) => (<img src={img} key={index} />))}
                     </div>
                </div>
           </section>

@@ -8,9 +8,7 @@ import expressIcon from "/icons/express.svg";
 import mongodbIcon from "/icons/mongodb.svg";
 import firebaseIcon from "/icons/firebase.svg";
 import tailwindIcon from "/icons/tailwind.svg";
-import html5Icon from "/icons/html5.svg";
 import bootstrapIcon from "/icons/bootstrap.svg";
-import css3Icon from "/icons/css3.svg";
 import gitIcon from "/icons/git.svg";
 import vsIcon from "/icons/vs.svg";
 import netlifyIcon from "/icons/netlify.svg";
@@ -24,11 +22,10 @@ import xdIcon from "/icons/xd.svg";
 import filmoraIcon from "/icons/filmora.svg";
 import Collapse from "../components/collapse";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
-     const effectRun = useRef(false)
      const [projects, setProjects] = useState([])
      const [filterArray, setFilterArray] = useState([]);
      const [count, setCount] = useState({
@@ -44,9 +41,7 @@ export default function Home() {
           { name: "MongoDB", icon: mongodbIcon },
           { name: "Firebase", icon: firebaseIcon },
           { name: "TailwindCSS", icon: tailwindIcon },
-          { name: "HTML5", icon: html5Icon },
-          { name: "Bootstrap", icon: bootstrapIcon },
-          { name: "CSS3", icon: css3Icon }
+          { name: "Bootstrap", icon: bootstrapIcon }
      ];
      const toolArray = [
           { name: "Git", icon: gitIcon },
@@ -70,22 +65,19 @@ export default function Home() {
      ]
 
      useEffect(() => {
-          if (effectRun.current === true) {
-               fetch(`/JSON/projects.JSON`)
-                    .then(res => res.json())
-                    .then(data => {
-                         setProjects(data);
-                         setFilterArray(data);
+          fetch(`/JSON/projects.JSON`)
+               .then(res => res.json())
+               .then(data => {
+                    setProjects(data);
+                    setFilterArray(data);
 
-                         for (const property in count) {
-                              const value = data.filter(project => project.keyword == property).length;
-                              setCount((prevCount) => {
-                                   return { ...prevCount, [property]: value }
-                              })
-                         }
-                    })
-          }
-          return () => { effectRun.current = true }
+                    for (const property in count) {
+                         const value = data.filter(project => project.keyword == property).length;
+                         setCount((prevCount) => {
+                              return { ...prevCount, [property]: value }
+                         })
+                    }
+               })
      }, [])
 
      const filterProject = (filterKey) => {
