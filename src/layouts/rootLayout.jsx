@@ -9,6 +9,7 @@ import menuIcon from "/icons/menu.svg";
 import weChatImg from "/images/weChat.jpg";
 import whatsappImg from "/images/whatsapp.jpg";
 import { useEffect, useState } from "react";
+import WOW from "wow.js";
 
 
 export default function RootLayout() {
@@ -19,9 +20,13 @@ export default function RootLayout() {
           if (pathname != "/") window.scrollTo(0, 0);
      }, [pathname]);
 
+     useEffect(() => {
+          new WOW().init();
+     }, [])
+
      return (
           <>
-               <header className={`${show ? "bg-neutral-800" : "bg-transparent"} fixed flex flex-wrap justify-between items-center w-full backdrop-blur-sm xl:px-12 sm:px-6 px-4 xs:py-4 py-2 z-50 transition-all duration-700`}>
+               <header className={`${show ? "bg-neutral-800" : "bg-transparent"} wow fadeInDown fixed flex flex-wrap justify-between items-center w-full backdrop-blur-sm xl:px-12 sm:px-6 px-4 xs:py-4 py-2 z-50 transition-all duration-700`}>
                     <Link to={`/`} className="uppercase font-bold tracking-wider xs:text-2xl text-xl"><span className="font-black tracking-widest text-orange-400">#</span> morshed alam</Link>
                     <nav className={`${show ? "opacity-100 visible" : "opacity-0 invisible"} lg:relative absolute left-0 top-full lg:bg-transparent bg-neutral-800/50 lg:opacity-100 lg:visible lg:w-auto w-full lg:h-auto h-screen font-semibold xs:text-lg text-base z-40 sl-animated-xl`}>
                          <div onClick={() => { show ? setShow(false) : setShow(true) }} className="absolute inset-0 lg:hidden block w-full h-full z-20"></div>
@@ -42,7 +47,7 @@ export default function RootLayout() {
                </main>
 
                <footer className="sl-container text-center md:pb-10 xs:pb-6 pb-4">
-                    <ul className="flex flex-wrap justify-center sm:gap-4 gap-3 xs:mb-5 mb-3">
+                    <ul className="wow fadeIn flex flex-wrap justify-center sm:gap-4 gap-3 xs:mb-5 mb-3">
                          <li><a href="https://www.linkedin.com/in/mamorshedalam" className="block xs:w-10 w-8 xs:h-10 h-8 rounded-full border-2 border-sky-50 xs:p-2.5 p-1.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={linkedinIcon} alt="" className="h-full" /></a></li>
                          <li><a href="https://github.com/mamorshedalam" className="block xs:w-10 w-8 xs:h-10 h-8 rounded-full border-2 border-sky-50 xs:p-2.5 p-1.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={githubIcon} alt="" className="h-full" /></a></li>
                          <li><a href="https://twitter.com/mamorshedalam2" className="block xs:w-10 w-8 xs:h-10 h-8 rounded-full border-2 border-sky-50 xs:p-2.5 p-1.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={twitterIcon} alt="" className="h-full" /></a></li>
@@ -50,7 +55,7 @@ export default function RootLayout() {
                          <li><a href="https://www.instagram.com/mamorshedalam/" className="block xs:w-10 w-8 xs:h-10 h-8 rounded-full border-2 border-sky-50 xs:p-2.5 p-1.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={instagramIcon} alt="" className="h-full" /></a></li>
                          <li><a href="mailto:mamorshedalam@outlook.com" className="block xs:w-10 w-8 xs:h-10 h-8 rounded-full border-2 border-sky-50 xs:p-2.5 p-1.5 hover:bg-neutral-700 hover:border-neutral-700 sl-animated-xl"><img src={mailIcon} alt="" className="h-full" /></a></li>
                     </ul>
-                    <div className="flex flex-wrap justify-center gap-3">
+                    <div className="wow fadeIn flex flex-wrap justify-center gap-3">
                          <img src={weChatImg} alt="" className="xs:w-20 w-16 rounded" />
                          <img src={whatsappImg} alt="" className="xs:w-20 w-16 rounded" />
                     </div>

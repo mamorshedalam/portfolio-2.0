@@ -8,7 +8,7 @@ export default function Collapse({ obj }) {
 
 
      return (
-          <div className="overflow-hidden">
+          <div className="wow fadeInUp overflow-hidden">
                <div onClick={() => { show ? setShow(false) : setShow(true) }} className="flex flex-wrap justify-between items-center bg-neutral-700 rounded font-semibold md:text-xl py-3 md:px-6 px-4 mb-4">
                     <h3>{obj.designation} @ {obj.company}</h3>
                     <p className="flex items-center">{obj.duration} <button className="xl:text-2xl text-xl xl:ml-6 md:ml-4 xs:ml-2 ml-1 hover:text-orange-400">+</button></p>

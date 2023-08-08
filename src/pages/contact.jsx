@@ -6,7 +6,7 @@ export default function Contact() {
 
      return (
           <section className="md:pt-28 xs:pt-20 py-14 md:px-6 sm:px-4 px-2">
-               <h2 className="text-center font-bold md:text-4xl sm:text-3xl text-2xl mb-9">Let's Cook Something Together <span className="text-orange-400">.</span></h2>
+               <h2 data-wow-duration="3s" className="wow fadeIn text-center font-bold md:text-4xl sm:text-3xl text-2xl mb-9">Let's Cook Something Together <span className="text-orange-400">.</span></h2>
                <div className="lg:w-1/2 md:w-3/4 w-full mx-auto">
                     <form action="" className="flex flex-wrap">
                          <div className="sm:w-1/2 w-full sm:pr-3 xl:mb-6 mb-4">

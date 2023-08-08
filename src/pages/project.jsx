@@ -22,14 +22,14 @@ export default function Project() {
           <section className="md:py-20 xs:py-16 py-12">
                <div className="sl-container">
                     <button onClick={() => { navigate(-1) }} className="flex items-center justify-center sm:w-10 w-8 sm:h-10 h-8 rounded-full bg-neutral-800 md:mb-6 mb-4 hover:bg-neutral-700 sl-animated-xl"><img src={leftArrow} alt="" className="sm:h-6 h-5" /></button>
-                    <h3 className="text-orange-400 capitalize font-semibold">// <span className="text-sky-50 opacity-70">{project.category}</span></h3>
-                    <h2 className="lg:w-1/2 lg:text-7xl md:text-5xl sm:text-4xl text-3xl font-bold tracking-wide">{project.name}</h2>
+                    <h3 data-wow-delay="1s" className="wow fadeIn text-orange-400 capitalize font-semibold">// <span className="text-sky-50 opacity-70">{project.category}</span></h3>
+                    <h2 data-wow-duration="3s" className="wow fadeIn lg:w-1/2 lg:text-7xl md:text-5xl sm:text-4xl text-3xl font-bold tracking-wide">{project.name}</h2>
                     <div className="flex flex-wrap items-end justify-between lg:my-20 sm:my-12 xs:my-8 my-5">
-                         <div className="md:w-3/6 md:space-y-6 space-y-4 xs:mb-6 mb-4">
+                         <div className="wow fadeInLeft md:w-3/6 md:space-y-6 space-y-4 xs:mb-6 mb-4">
                               <p>{project.contribution}</p>
                               <p className="opacity-70">{project.description}</p>
                          </div>
-                         <div className="md:w-2/6">
+                         <div className="wow fadeInRight md:w-2/6">
                               <div className="flex flex-wrap">
                                    <div className="lg:w-1/2 w-full lg:pr-8 xs:mb-6 mb-4">
                                         <p className="font-bold sm:pt-4 pt-2 border-t border-sky-50/70">Client</p>
@@ -45,7 +45,7 @@ export default function Project() {
                          </div>
                     </div>
                     <div className="md:space-y-9 xs:space-y-6 space-y-4">
-                         {project.screenshot && project.screenshot.map((img, index) => (<img src={img} key={index} />))}
+                         {project.screenshot && project.screenshot.map((img, index) => (<img className="wow fadeInUp" src={img} key={index} />))}
                     </div>
                </div>
           </section>

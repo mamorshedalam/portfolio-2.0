@@ -94,18 +94,18 @@ export default function Home() {
           <>
                <section className="text-center h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: `url(${heroBg})` }}>
                     <div className="sl-container h-full flex flex-col justify-center">
-                         <h2 className="font-black uppercase tracking-wide xl:text-7xl sm:text-5xl xs:text-3xl text-2xl xl:mb-6 sm:mb-4 mb-2">front-end developer</h2>
-                         <p className="xl:text-2xl sm:text-xl text-orange-400"><span className="text-sky-50 opacity-70">Love to Play with codes in the arena of</span> JavaScript</p>
+                         <h2 data-wow-duration="3s" className="wow fadeIn font-black uppercase tracking-wide xl:text-7xl sm:text-5xl xs:text-3xl text-2xl xl:mb-6 sm:mb-4 mb-2">front-end developer</h2>
+                         <p data-wow-delay="1s" className="wow fadeIn xl:text-2xl sm:text-xl text-orange-400"><span className="text-sky-50 opacity-70">Love to Play with codes in the arena of</span> JavaScript</p>
                     </div>
                </section>
 
                <section id="about" className="xl:pt-40 md:pt-28 sm:pt-20 xs:pt-16 pt-10">
                     <div className="sl-container grid md:grid-cols-2 grid-cols-1 items-center xl:gap-6 xs:gap-4 gap-2">
-                         <div>
+                         <div className="wow fadeInLeft">
                               <h1 className="font-bold tracking-wide xl:text-6xl sm:text-4xl xs:text-3xl text-2xl sm:mb-4 mb-2">Hi, I'm Morshed Alam <br /> Web Developer</h1>
                               <p className="xl:text-xl sm:text-lg text-orange-400">// <span className="text-sky-50 opacity-70">Front-End Developer</span> // <span className="text-sky-50 opacity-70">Node Fan</span> // <span className="text-sky-50 opacity-70">JavaScript Expert</span></p>
                          </div>
-                         <div className="sm:space-y-4 space-y-2">
+                         <div className="wow fadeInRight sm:space-y-4 space-y-2">
                               <p>I'm working as a Web Developer since 2019. I have developed a strong understanding of Web Development and related Technology. I always tried to think out of the box & bring something creative through Hard Work. And love working with Team.</p>
                               <p>My expertise in Front-End Technologies also includes <i>responsive design, cross-browser compatibility, and SEO-optimised code.</i> I take pride in staying up-to-date with the latest trends and best practices in Front-End Development to ensure that I can deliver top-quality work to my Clients.</p>
                          </div>
@@ -114,31 +114,31 @@ export default function Home() {
 
                <section id="expertise" className="xl:py-40 md:py-28 sm:py-20 xs:py-16 py-10 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner1})` }}>
                     <div className="sl-container xl:space-y-9 sm:space-y-6 space-y-4">
-                         <div className="text-center">
+                         <div className="wow fadeIn text-center">
                               <span className="xl:text-xl sm:text-lg opacity-70 uppercase">A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST.</span>
                               <h2 className="font-bold tracking-wide xl:text-7xl sm:text-5xl xs:text-4xl text-3xl">Skills & Expertise</h2>
                          </div>
-                         <div className="sm:w-2/3 text-center mx-auto space-y-2">
+                         <div className="wow fadeInUp sm:w-2/3 text-center mx-auto space-y-2">
                               <p>The main area of expertise is Front-End Development (client side of the web).</p>
                               <p>I'm well-versed in HTML 5, CSS 3, and JavaScript (ES6) and worked extensively with popular Front-End frameworks such as React. I have also had a great deal of experience working with Node and used databases like MongoDB and Firebase.</p>
                               <p>Visit my <a href="https://www.linkedin.com/in/mamorshedalam" className="text-orange-400 hover:underline sl-animated-xl" target="_blank">Linkedin</a> for more details.</p>
                          </div>
                          <div className="md:space-y-6">
-                              <ul className="flex flex-wrap justify-center mb-4">
+                              <ul className="wow fadeInLeft flex flex-wrap justify-center mb-4">
                                    {programArray && programArray.map((item, index) => (
                                         <li key={index} className="xl:w-32 md:w-24 w-20 cursor-pointer text-center font-semibold sm:space-y-2 mb-4">
                                              <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>
-                              <ul className="flex flex-wrap justify-center mb-4">
+                              <ul className="wow fadeInRight flex flex-wrap justify-center mb-4">
                                    {toolArray && toolArray.map((item, index) => (
                                         <li key={index} className="xl:w-32 md:w-24 w-20 cursor-pointer text-center font-semibold sm:space-y-2 mb-4">
                                              <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>
-                              <ul className="flex flex-wrap justify-center">
+                              <ul className="wow fadeInLeft flex flex-wrap justify-center">
                                    {designArray && designArray.map((item, index) => (
                                         <li key={index} className="xl:w-32 md:w-24 w-20 cursor-pointer text-center font-semibold sm:space-y-2 mb-4">
                                              <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto" />
@@ -151,11 +151,11 @@ export default function Home() {
 
                <section id="work" className="xl:py-20 md:py-16 sm:py-10 py-5">
                     <div className="sl-container xl:space-y-12 md:space-y-9 space-y-6">
-                         <div className="text-center">
+                         <div className="wow fadeIn text-center">
                               <span className="xl:text-xl sm:text-lg opacity-70 uppercase">EVERY PROJECT IS A NEW CHALLENGE.</span>
                               <h2 className="font-bold tracking-wide xl:text-7xl sm:text-5xl xs:text-4xl text-3xl">Projects & Work</h2>
                          </div>
-                         <ul className="flex flex-wrap md:gap-6 xs:gap-3 gap-2 font-semibold">
+                         <ul className="wow fadeInLeft flex flex-wrap md:gap-6 xs:gap-3 gap-2 font-semibold">
                               <li className="">Filter by</li>
                               <li><button onClick={() => { filterProject("all") }} className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">{projects && projects.length < 9 ? `0${projects.length}` : projects.length}</span>// <span className="text-sky-50 opacity-70 hover:opacity-100 sl-animated-xl">All</span></button></li>
                               <li><button onClick={() => { filterProject("frontEnd") }} className="group relative text-orange-400 cursor-pointer"><span className="absolute -top-3 -right-3 text-sm text-orange-400 opacity-70  group-hover:opacity-100 sl-animated-xl">{count.frontEnd && count.frontEnd < 9 ? `0${count.frontEnd}` : count.frontEnd}</span>// <span className="text-sky-50 opacity-70 group-hover:opacity-100 sl-animated-xl">Front-End</span></button></li>
@@ -164,7 +164,7 @@ export default function Home() {
                          </ul>
                          <div className="flex flex-wrap justify-center">
                               {filterArray && filterArray.map((project, index) => (
-                                   <Link to={`project/${project.projectID}`} key={index} className="group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
+                                   <Link to={`project/${project.projectID}`} key={index} className="wow fadeInUp group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
                                         <div className="overflow-hidden rounded-t"><img src={project.thumbnail} alt="" className="xl:h-60 lg:h-40 md:h-60 w-full group-hover:scale-110 sl-animated-xl" /></div>
                                         <div className="bg-neutral-800 rounded-b xl:px-9 sm:px-6 px-4 xl:py-6 sm:py-4 py-2">
                                              <h3 className="font-bold xl:text-2xl text-xl">{project.name}</h3>
@@ -181,27 +181,27 @@ export default function Home() {
 
                <section id="experience" className="xl:py-40 md:py-28 sm:py-20 xs:py-16 py-10 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner2})` }}>
                     <div className="sl-container">
-                         <div className="text-center">
+                         <div className="wow fadeIn text-center">
                               <span className="xl:text-xl sm:text-lg opacity-70 uppercase">all places I go try to give my best.</span>
                               <h2 className="font-bold tracking-wide xl:text-7xl sm:text-5xl xs:text-4xl text-3xl">Experience & Education</h2>
                          </div>
                          <div className="xl:w-2/3 space-y-2 xl:mt-12 sm:mt-9 mt-6 mx-auto">{experience && experience.map((item, index) => (<Collapse key={index} obj={item} />))}</div>
                          <div className="flex flex-wrap justify-center mt-6">
-                              <div className="lg:w-1/3 md:w-1/2 w-full font-semibold px-2 mb-6">
+                              <div className="wow fadeInUp lg:w-1/3 md:w-1/2 w-full font-semibold px-2 mb-6">
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 sm:px-6 px-4">
                                         <h3 className="xl:text-xl md:text-lg">Computer Science & Technology</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Wuhan Institute of Technology, China</span></h4>
                                         <p className="flex justify-between opacity-70"><span>2023 - 2027</span><span>Running</span></p>
                                    </div>
                               </div>
-                              <div className="lg:w-1/3 md:w-1/2 w-full font-semibold px-2 mb-6">
+                              <div className="wow fadeInUp lg:w-1/3 md:w-1/2 w-full font-semibold px-2 mb-6">
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 sm:px-6 px-4">
                                         <h3 className="xl:text-xl md:text-lg">Computer Science</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Universiti Teknologi PETRONAS, Malaysia</span></h4>
                                         <p className="flex justify-between opacity-70"><span>2022 - 2023</span><span>Drop</span></p>
                                    </div>
                               </div>
-                              <div className="lg:w-1/3 md:w-1/2 w-full font-semibold px-2 mb-6">
+                              <div className="wow fadeInUp lg:w-1/3 md:w-1/2 w-full font-semibold px-2 mb-6">
                                    <div className="bg-neutral-700 rounded space-y-2 py-3 sm:px-6 px-4">
                                         <h3 className="xl:text-xl md:text-lg">Computer Technology</h3>
                                         <h4 className="text-orange-400">// <span className="text-sky-50 opacity-70">Chittagong Polytechnic Institute, Bangladesh</span></h4>
@@ -209,7 +209,7 @@ export default function Home() {
                                    </div>
                               </div>
                          </div>
-                         <div className="flex lg:w-2/3 justify-between items-center bg-neutral-800 xl:px-9 sm:px-6 px-4 xl:py-12 sm:py-9 py-6 rounded xl:mt-40 md:mt-28 sm:mt-20 xs:mt-16 mt-10 mx-auto">
+                         <div className="wow fadeInDown flex lg:w-2/3 justify-between items-center bg-neutral-800 xl:px-9 sm:px-6 px-4 xl:py-12 sm:py-9 py-6 rounded xl:mt-40 md:mt-28 sm:mt-20 xs:mt-16 mt-10 mx-auto">
                               <div>
                                    <h2 className="font-black tracking-wider xl:text-4xl md:text-3xl sm:text-2xl text-xl">Start a project</h2>
                                    <p>Interested in working together? We should queue up a time to chat.</p>
