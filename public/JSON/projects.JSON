@@ -87,7 +87,7 @@
     "description": "RMS (Result Management System) is a program that use to manage academic examination results. It's can calculate marks and generate the result by itself. And can publish the result to the students. After entering every subject’s mark admin can public the result page to the student and students can search their results by themself.",
     "contribution": "This project I build as my diploma thesis. I lean Node on this project.",
     "technology": ["JavaScript", "Node", "MongoDB", "Axios"],
-    "category": "Full-Stack Development",
+    "category": "Back-End Development",
     "sourceCode": "https://github.com/mamorshedalam/rms-v1",
     "liveLink": "https://rms-v1-ten.vercel.app/",
     "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1691491700/project/RMS/092527-jteeeh.png",
