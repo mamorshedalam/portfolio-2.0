@@ -5,7 +5,7 @@
     "name": "Infiny E-commerce",
     "client": "own project",
     "description": "Infiny E-commerce is a single vendor serverless E-commerce Web Application. Build with React JS single page application technology (SPA) and Firebase Realtime Database.",
-    "contribution": "I build this project for practice purposes. I learn Firebase Real-Time Database on this project. ",
+    "contribution": "I build this project for practice purposes. I have learned Firebase Real-Time Database on this project. ",
     "technology": ["React", "Firebase", "Tailwind CSS"],
     "category": "Full-Stack Development",
     "sourceCode": "https://github.com/mamorshedalam/infiny-ecommerce",
@@ -21,12 +21,31 @@
     ]
   },
   {
+    "projectID": 23080806,
+    "keyword": "fullStack",
+    "name": "Darya.ai",
+    "client": "Darya.ai",
+    "description": "Darya.ai is a US based messaging chatbot. The web app is for schedule meeting time according to user availability. Chatbot provide URL to it's user. User can come with URL provided by chatbot or can also login with google account to schedule their meeting time, also can update their schedule.",
+    "contribution": "I build a meeting scheduling Web app for Darya.ai. I have learned the use of the Firebase Firestore database on this project.",
+    "technology": ["React", "Firebase", "Tailwind CSS", "Multi Date Picker"],
+    "category": "Web App",
+    "sourceCode": "",
+    "liveLink": "https://www.darya.ai",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888326/project/daryaai/aa5dfe7r8avkdsumeo1g.png",
+    "screenshot": [
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888326/project/daryaai/aa5dfe7r8avkdsumeo1g.png",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888326/project/daryaai/tkcrsfbsebpk5l4dtcjl.png",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888326/project/daryaai/v8lninm4s2fcajcekolo.png",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888326/project/daryaai/g4jkqakvyqqcvedddqcg.png"
+    ]
+  },
+  {
     "projectID": 23080801,
     "keyword": "frontEnd",
     "name": "X METAVERSE PRO",
     "client": "The X META Foundation",
     "description": "X METAVERSE PRO is a super ecology built on Web 3.0 and DeFi 2.0 architecture. It is committed to building a new business world of 3D immersive metaverse - X METAWORLD. X METAVERSE PRO collaborates with global technology enthusiasts, financial experts, business elites, and Dao members to develop Metaverse Investment Bank, NFT Trading Market, Metaverse Mall, Alliance Reserve Bureau, Dex, GameFi, SocialFi, Metaverse City Cluster, and other ecological applications.",
-    "contribution": "I build front-end of X Meta company portfolio, X Meta copy trading & X Meta dashboard. I learn the integration of Lottie Animation on this project.",
+    "contribution": "I build front-end of X Meta company portfolio, X Meta copy trading & X Meta dashboard. I have learned the integration of Lottie Animation on this project.",
     "technology": [
       "JavaScript",
       "Tailwind CSS",
@@ -49,7 +68,7 @@
     "name": "Dolares",
     "client": "Costablanca",
     "description": "Dolares is one of the biggest online marketing platforms where you can earn money. Register and try games or apps. Take part in different surveys and earn money from home easily.",
-    "contribution": "I build the front-end of the website. I learn the integration of Chart JS on this project.",
+    "contribution": "I build the front-end of the website. I have learned the integration of Chart JS on this project.",
     "technology": ["JavaScript", "Tailwind CSS", "Chart JS"],
     "category": "Front-End Development",
     "sourceCode": "",
@@ -62,12 +81,29 @@
     ]
   },
   {
+    "projectID": 23080807,
+    "keyword": "frontEnd",
+    "name": "Solbase AI",
+    "client": "Solbase AI",
+    "description": "SOLBASE AI is the first meme inspired investing platform that maximizes returns through trading pools. SolBase-AI offers multiple services enabling users to maximise profits on their investment. There are lots of way investors can generate profit using the platform.",
+    "contribution": "I built company portfolio for SOLBASE AI.",
+    "technology": ["React", "Tailwind CSS", "Chart JS"],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://solbaseai.com/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888193/project/solbaseai/mkpwdvbwuikylbsrauwg.jpg",
+    "screenshot": [
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888193/project/solbaseai/mkpwdvbwuikylbsrauwg.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711888194/project/solbaseai/iyd6sn0tjibpkeursxbj.jpg"
+    ]
+  },
+  {
     "projectID": 23080803,
     "keyword": "frontEnd",
     "name": "GVI",
     "client": "GVI Company Limited",
     "description": "Global Village International (GVI) is one of the Bangladesh’s leading premium import, marketing and distribution company. Global Village International (GVI) has been successfully operating in the Bangladesh region with multiple concepts providing a selection of trusted brands to through all channels of distribution. Established in 1999, our history and wealth of knowledge and our experience of more than 2 decades help us to to provide our customers with best modernized and innovative service.",
-    "contribution": "I build the front-end of the website. I learn building of slider in slider on this project which is on gallery page.",
+    "contribution": "I build the front-end of the website. I have learned building of slider in slider on this project which is on gallery page.",
     "technology": ["JavaScript", "Bootstrap"],
     "category": "Front-End Development",
     "sourceCode": "",
@@ -85,7 +121,7 @@
     "name": "RMS",
     "client": "own project",
     "description": "RMS (Result Management System) is a program that use to manage academic examination results. It's can calculate marks and generate the result by itself. And can publish the result to the students. After entering every subject’s mark admin can public the result page to the student and students can search their results by themself.",
-    "contribution": "This project I build as my diploma thesis. I lean Node on this project.",
+    "contribution": "This project I build as my diploma thesis. I have learned Node on this project.",
     "technology": ["JavaScript", "Node", "MongoDB", "Axios"],
     "category": "Back-End Development",
     "sourceCode": "https://github.com/mamorshedalam/rms-v1",
@@ -95,6 +131,24 @@
       "https://res.cloudinary.com/mamorshedalam/image/upload/v1691491700/project/RMS/092527-jteeeh.png",
       "https://res.cloudinary.com/mamorshedalam/image/upload/v1691491699/project/RMS/092731-kyrbsn.png",
       "https://res.cloudinary.com/mamorshedalam/image/upload/v1691491699/project/RMS/092359-iwxeix.png"
+    ]
+  },
+  {
+    "projectID": 23080808,
+    "keyword": "frontEnd",
+    "name": "Bitakon",
+    "client": "Abishek",
+    "description": "Bitakon is a NFT selling website theme. Which made to showcase and sell NFT.",
+    "contribution": "I converted Bitakon theme from Bootstrap to Alpine.js with TailwindCSS. I have learned Alpine.js in this project.",
+    "technology": ["Alpine.js", "Tailwind CSS", "Swiper.js"],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://bitakon.netlify.app/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1711881678/project/bitakon/osgrumfsve9xfgepyjak.jpg",
+    "screenshot": [
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711881678/project/bitakon/osgrumfsve9xfgepyjak.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711881678/project/bitakon/tonrrw34xty3b5xw2vnp.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1711881678/project/bitakon/eunpzitix1tky9ttrrsr.jpg"
     ]
   }
 ]

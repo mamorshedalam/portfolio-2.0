@@ -7,6 +7,7 @@ import nodeIcon from "/icons/node.svg";
 import expressIcon from "/icons/express.svg";
 import mongodbIcon from "/icons/mongodb.svg";
 import firebaseIcon from "/icons/firebase.svg";
+import alpineIcon from "/icons/alpine-js.svg";
 import tailwindIcon from "/icons/tailwind.svg";
 import bootstrapIcon from "/icons/bootstrap.svg";
 import gitIcon from "/icons/git.svg";
@@ -40,6 +41,7 @@ export default function Home() {
           { name: "Express", icon: expressIcon },
           { name: "MongoDB", icon: mongodbIcon },
           { name: "Firebase", icon: firebaseIcon },
+          { name: "Alpine", icon: alpineIcon },
           { name: "TailwindCSS", icon: tailwindIcon },
           { name: "Bootstrap", icon: bootstrapIcon }
      ];
@@ -165,7 +167,7 @@ export default function Home() {
                          <div className="flex flex-wrap justify-center">
                               {filterArray && filterArray.map((project, index) => (
                                    <Link to={`project/${project.projectID}`} key={index} className="wow fadeInUp group lg:w-1/3 md:w-1/2 md:px-4 mb-6">
-                                        <div className="overflow-hidden rounded-t"><img src={project.thumbnail} alt="" className="xl:h-60 lg:h-40 md:h-60 w-full group-hover:scale-110 sl-animated-xl" /></div>
+                                        <div className="overflow-hidden rounded-t">{project.category == "Web App" ? <img src={project.thumbnail} alt="" className="xl:h-60 lg:h-40 md:h-60 w-fit mx-auto group-hover:scale-110 sl-animated-xl" /> : <img src={project.thumbnail} alt="" className="xl:h-60 lg:h-40 md:h-60 w-full group-hover:scale-110 sl-animated-xl" />}</div>
                                         <div className="bg-neutral-800 rounded-b xl:px-9 sm:px-6 px-4 xl:py-6 sm:py-4 py-2">
                                              <h3 className="font-bold xl:text-2xl text-xl">{project.name}</h3>
                                              <div className="relative h-6">
