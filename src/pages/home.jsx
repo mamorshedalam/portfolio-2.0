@@ -2,12 +2,15 @@ import heroBg from "/images/hero-bg.png";
 import banner1 from "/images/banner-1.png";
 import banner2 from "/images/banner-2.png";
 import jsIcon from "/icons/js.svg";
+import tsIcon from "/icons/ts.svg";
 import reactIcon from "/icons/react.svg";
+import nextIcon from "/icons/nextjs.svg";
 import nodeIcon from "/icons/node.svg";
 import expressIcon from "/icons/express.svg";
 import mongodbIcon from "/icons/mongodb.svg";
 import firebaseIcon from "/icons/firebase.svg";
 import alpineIcon from "/icons/alpine-js.svg";
+import sanityIcon from "/icons/sanity.svg";
 import tailwindIcon from "/icons/tailwind.svg";
 import bootstrapIcon from "/icons/bootstrap.svg";
 import gitIcon from "/icons/git.svg";
@@ -36,12 +39,15 @@ export default function Home() {
      })
      const programArray = [
           { name: "JavaScript", icon: jsIcon },
+          { name: "TypeScript", icon: tsIcon },
+          { name: "Next", icon: nextIcon },
           { name: "React", icon: reactIcon },
+          { name: "Alpine", icon: alpineIcon },
           { name: "Node", icon: nodeIcon },
           { name: "Express", icon: expressIcon },
           { name: "MongoDB", icon: mongodbIcon },
+          { name: "Sanity", icon: sanityIcon },
           { name: "Firebase", icon: firebaseIcon },
-          { name: "Alpine", icon: alpineIcon },
           { name: "TailwindCSS", icon: tailwindIcon },
           { name: "Bootstrap", icon: bootstrapIcon }
      ];
@@ -61,7 +67,7 @@ export default function Home() {
           { name: "Filmora", icon: filmoraIcon }
      ];
      const experience = [
-          { designation: "Web Developer", company: "Fiverr", website: "fiverr.com", duration: "2021 - Present", location: "Remote", keyword: ["JavaScript", "React", "Node", "Firebase", "TailwindCSS", "Figma"], description: "I have been working as a freelance developer since 2019 locally. After leaving Spinner Tech, I start working as a freelance developer on Fiverr. And get chance to work on various projects with various developers." },
+          { designation: "Web Developer", company: "Fiverr", website: "fiverr.com/tech_infiny", duration: "2021 - Present", location: "Remote", keyword: ["JavaScript", "TypeScript", "Next", "React", "Alpine", "Node", "Firebase", "TailwindCSS", "Figma"], description: "I have been working as a freelance developer since 2019 locally. After leaving Spinner Tech, I start working as a freelance developer on Fiverr. And get chance to work on various projects with various developers." },
           { designation: "Intern", company: "Bangladesh Railway", website: "railway.gov.bd", duration: "2021 - 2022", location: "Chattogram, Bangladesh", keyword: ["Networking", "CTC", "MS Office"], description: "It's part of my Diploma course. I learn how an organization works and manages manpower. I got the opportunity to lead a team during the training period. I also learn about communication networks and media over there." },
           { designation: "Web Designer", company: "Spinner Tech Ltd", website: "spinnertech.dev", duration: "2021 - 2021", location: "Chattogram, Bangladesh", keyword: ["JavaScript", "JQuery", "Bootstrap", "Photoshop"], description: "In Spinner Tech Ltd, I explore myself. And learn to work together in a team. I also learn to handle projects on an IT farm. I enjoyed my 3 months with some awesome projects and teammates." },
      ]
@@ -96,7 +102,7 @@ export default function Home() {
           <>
                <section className="text-center h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: `url(${heroBg})` }}>
                     <div className="sl-container h-full flex flex-col justify-center">
-                         <h2 data-wow-duration="3s" className="wow fadeIn font-black uppercase tracking-wide xl:text-7xl sm:text-5xl xs:text-3xl text-2xl xl:mb-6 sm:mb-4 mb-2">front-end developer</h2>
+                         <h2 data-wow-duration="3s" className="wow fadeIn font-black uppercase tracking-wide xl:text-7xl sm:text-5xl xs:text-3xl text-2xl xl:mb-6 sm:mb-4 mb-2">Web developer</h2>
                          <p data-wow-delay="1s" className="wow fadeIn xl:text-2xl sm:text-xl text-orange-400"><span className="text-sky-50 opacity-70">Love to Play with codes in the arena of</span> JavaScript</p>
                     </div>
                </section>
@@ -105,11 +111,11 @@ export default function Home() {
                     <div className="sl-container grid md:grid-cols-2 grid-cols-1 items-center xl:gap-6 xs:gap-4 gap-2">
                          <div className="wow fadeInLeft">
                               <h1 className="font-bold tracking-wide xl:text-6xl sm:text-4xl xs:text-3xl text-2xl sm:mb-4 mb-2">Hi, I'm Morshed Alam <br /> Web Developer</h1>
-                              <p className="xl:text-xl sm:text-lg text-orange-400">// <span className="text-sky-50 opacity-70">Front-End Developer</span> // <span className="text-sky-50 opacity-70">Node Fan</span> // <span className="text-sky-50 opacity-70">JavaScript Expert</span></p>
+                              <p className="xl:text-xl sm:text-lg text-orange-400 cursor-pointer">// <span className="text-sky-50 opacity-70 hover:opacity-100">Full-Stack Developer</span> // <span className="text-sky-50 opacity-70 hover:opacity-100">Python Fan</span> // <span className="text-sky-50 opacity-70 hover:opacity-100">JavaScript/TypeScript Expert</span></p>
                          </div>
                          <div className="wow fadeInRight sm:space-y-4 space-y-2">
                               <p>I'm working as a Web Developer since 2019. I have developed a strong understanding of Web Development and related Technology. I always tried to think out of the box & bring something creative through Hard Work. And love working with Team.</p>
-                              <p>My expertise in Front-End Technologies also includes <i>responsive design, cross-browser compatibility, and SEO-optimised code.</i> I take pride in staying up-to-date with the latest trends and best practices in Front-End Development to ensure that I can deliver top-quality work to my Clients.</p>
+                              <p>My expertise in Web Develop Technologies also includes <i>responsive design, cross-browser compatibility, and SEO-optimised code.</i> I take pride in staying up-to-date with the latest trends and best practices in Web Development to ensure that I can deliver top-quality work to my Clients.</p>
                          </div>
                     </div>
                </section>
@@ -117,33 +123,33 @@ export default function Home() {
                <section id="expertise" className="xl:py-40 md:py-28 sm:py-20 xs:py-16 py-10 bg-cover bg-bottom" style={{ backgroundImage: `url(${banner1})` }}>
                     <div className="sl-container xl:space-y-9 sm:space-y-6 space-y-4">
                          <div className="wow fadeIn text-center">
-                              <span className="xl:text-xl sm:text-lg opacity-70 uppercase">A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST.</span>
+                              <span className="xl:text-xl sm:text-lg opacity-70 uppercase">A PROBLEM IS A CHANCE FOR ME TO DO MY BEST.</span>
                               <h2 className="font-bold tracking-wide xl:text-7xl sm:text-5xl xs:text-4xl text-3xl">Skills & Expertise</h2>
                          </div>
                          <div className="wow fadeInUp sm:w-2/3 text-center mx-auto space-y-2">
-                              <p>The main area of expertise is Front-End Development (client side of the web).</p>
-                              <p>I'm well-versed in HTML 5, CSS 3, and JavaScript (ES6) and worked extensively with popular Front-End frameworks such as React. I have also had a great deal of experience working with Node and used databases like MongoDB and Firebase.</p>
+                              <p>The main area of expertise is Website Development (Client/Server side).</p>
+                              <p>I'm well-versed in JavaScript and TypeScript and worked extensively with popular frameworks such as Next/React and Alpine JS. I have also had a great deal of experience working with Node and used databases like MongoDB and Firebase.</p>
                               <p>Visit my <a href="https://www.linkedin.com/in/mamorshedalam" className="text-orange-400 hover:underline sl-animated-xl" target="_blank">Linkedin</a> for more details.</p>
                          </div>
                          <div className="md:space-y-6">
                               <ul className="wow fadeInLeft flex flex-wrap justify-center mb-4">
                                    {programArray && programArray.map((item, index) => (
                                         <li key={index} className="xl:w-32 md:w-24 w-20 cursor-pointer text-center font-semibold sm:space-y-2 mb-4">
-                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto" />
+                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto hover:opacity-75" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>
                               <ul className="wow fadeInRight flex flex-wrap justify-center mb-4">
                                    {toolArray && toolArray.map((item, index) => (
                                         <li key={index} className="xl:w-32 md:w-24 w-20 cursor-pointer text-center font-semibold sm:space-y-2 mb-4">
-                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto" />
+                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto hover:opacity-75" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>
                               <ul className="wow fadeInLeft flex flex-wrap justify-center">
                                    {designArray && designArray.map((item, index) => (
                                         <li key={index} className="xl:w-32 md:w-24 w-20 cursor-pointer text-center font-semibold sm:space-y-2 mb-4">
-                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto" />
+                                             <img src={item.icon} alt={item.name} className="w-fit xl:h-20 sm:h-14 h-10 mx-auto hover:opacity-75" />
                                              <h3>{item.name}</h3>
                                         </li>))}
                               </ul>

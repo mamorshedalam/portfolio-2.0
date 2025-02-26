@@ -1,6 +1,25 @@
 [
   {
-    "projectID": 23080805,
+    "projectID": 2025022601,
+    "keyword": "fullStack",
+    "name": "Blog Site",
+    "client": "own project",
+    "description": "Blog Site is an idea-sharing platform designed for new startups. Users can create an account using GitHub and pitch their startup ideas to others. They can also explore a timeline of pitches shared by other users and view the profiles of those who have submitted pitches. This project utilizes Static Site Generation (SSG) and Streaming Server Rendering (SSR) to enhance performance and user experience.",
+    "contribution": "I build this project for practice purposes. I have learned Next/React on this project. ",
+    "technology": ["TypeScript", "Next", "React", "Sanity", "Tailwind CSS", "ShadCN"],
+    "category": "Full-Stack Development",
+    "sourceCode": "https://github.com/mamorshedalam/blog_site",
+    "liveLink": "https://blog-site-mamorshedalams-projects.vercel.app/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1739031044/project/blog-site/rb7peycpwmcxiz9lfiys.jpg",
+    "screenshot": [
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1739031045/project/blog-site/px7c3ykvhdc3fdtkwxrz.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1739031045/project/blog-site/nvqv0i1cgawcjejugdui.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1739031045/project/blog-site/wlwivumvgs94ub0bbntd.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1739031045/project/blog-site/iw9gpmry3dxysjhvinn9.jpg"
+    ]
+  },
+  {
+    "projectID": 2025022602,
     "keyword": "fullStack",
     "name": "Infiny E-commerce",
     "client": "own project",
@@ -21,7 +40,7 @@
     ]
   },
   {
-    "projectID": 23080806,
+    "projectID": 2025022603,
     "keyword": "fullStack",
     "name": "Darya.ai",
     "client": "Darya.ai",
@@ -40,7 +59,62 @@
     ]
   },
   {
-    "projectID": 23080801,
+    "projectID": 2025022604,
+    "keyword": "fullStack",
+    "name": "Express Kitchens and Bath",
+    "client": "expresskitchensandbath.com",
+    "description": "Express Kitchens and Bath is a kitchen and bath remodeling company. They provide a wide range of services, including kitchen and bath remodeling, custom cabinetry, and countertop installation. The website showcases their services and portfolio, and allows users to request a free estimate.",
+    "contribution": "I build the front-end of the website. I have learned the integration of Sanity CMS on this project.",
+    "technology": ["TypeScript", "Next", "React", "Sanity", "Tailwind CSS", "ShadCN"],
+    "category": "Full-Stack Development",
+    "sourceCode": "",
+    "liveLink": "https://expresskitchensandbath.com/",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1740537135/project/express-kitchens-bath/uil88mtaqx9e1o9duckc.jpg",
+    "screenshot": [
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740537135/project/express-kitchens-bath/uil88mtaqx9e1o9duckc.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740537137/project/express-kitchens-bath/ndnbonolugnplerbjmlg.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740537136/project/express-kitchens-bath/j4vj5kpmg6weyt7ux7vz.jpg"
+    ]
+  },
+  {
+    "projectID": 2025022605,
+    "keyword": "frontEnd",
+    "name": "CliqClose",
+    "client": "cliqclose.com",
+    "description": "cliQClose is a platform that connects buyers and sellers of real estate. The website allows users to search for properties, view listings, and connect with real estate agents. Users can also create an account to save their favorite listings and receive notifications about new properties that match their criteria.",
+    "contribution": "I converted this from Bootstrap to Alpine.js with TailwindCSS.",
+    "technology": ["Alpine.js", "Tailwind CSS", "Swiper.js"],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://cliqclose.com",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1740537005/project/cliqclose/idjhkzgvnffdkyhc2mjf.jpg",
+    "screenshot": [
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740536412/project/cliqclose/bs70rat0mnw3f3mmy0t6.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740536409/project/cliqclose/exueeqae1qcdsrfctiy7.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1691491690/project/x-metaverse/090641-u0odap.png",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740536402/project/cliqclose/x90ua3djgmcdolt24ooi.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740536402/project/cliqclose/wsdcdaqjmvaduzoqa6fh.jpg",
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740536401/project/cliqclose/lyijfbqw4lkkcpnj3iav.jpg"
+    ]
+  },
+  {
+    "projectID": 2025022606,
+    "keyword": "frontEnd",
+    "name": "Go Sourcer",
+    "client": "gosourcer.com",
+    "description": "Go Sourcer is a platform that connects buyers and sellers of real estate. The website allows users to search for properties, view listings, and connect with real estate agents. Users can also create an account to save their favorite listings and receive notifications about new properties that match their criteria.",
+    "contribution": "I updated theme and converted it for Go Sourcer",
+    "technology": ["Next", "React", "Bootstrap", "Sass", "Slick", "Lucide Icons"],
+    "category": "Front-End Development",
+    "sourceCode": "",
+    "liveLink": "https://gosourcer.com",
+    "thumbnail": "https://res.cloudinary.com/mamorshedalam/image/upload/v1740536959/project/gosourcer/tl0spyicx43aoapb5cqg.jpg",
+    "screenshot": [
+      "https://res.cloudinary.com/mamorshedalam/image/upload/v1740536972/project/gosourcer/ijrrwgody6w1wvbnvqg0.jpg"
+    ]
+  },
+  {
+    "projectID": 2025022607,
     "keyword": "frontEnd",
     "name": "X METAVERSE PRO",
     "client": "The X META Foundation",
@@ -63,7 +137,7 @@
     ]
   },
   {
-    "projectID": 23080802,
+    "projectID": 2025022608,
     "keyword": "frontEnd",
     "name": "Dolares",
     "client": "Costablanca",
@@ -81,7 +155,7 @@
     ]
   },
   {
-    "projectID": 23080807,
+    "projectID": 2025022609,
     "keyword": "frontEnd",
     "name": "Solbase AI",
     "client": "Solbase AI",
@@ -98,7 +172,7 @@
     ]
   },
   {
-    "projectID": 23080803,
+    "projectID": 2025022610,
     "keyword": "frontEnd",
     "name": "GVI",
     "client": "GVI Company Limited",
@@ -116,7 +190,7 @@
     ]
   },
   {
-    "projectID": 23080804,
+    "projectID": 2025022611,
     "keyword": "backEnd",
     "name": "RMS",
     "client": "own project",
@@ -134,7 +208,7 @@
     ]
   },
   {
-    "projectID": 23080808,
+    "projectID": 2025022612,
     "keyword": "frontEnd",
     "name": "Bitakon",
     "client": "Abishek",
