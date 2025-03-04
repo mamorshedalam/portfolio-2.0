@@ -1,8 +1,6 @@
 import heroBg from "/images/hero-bg.png";
 import banner1 from "/images/banner-1.png";
 import banner2 from "/images/banner-2.png";
-import jsIcon from "/icons/js.svg";
-import tsIcon from "/icons/ts.svg";
 import reactIcon from "/icons/react.svg";
 import nextIcon from "/icons/nextjs.svg";
 import nodeIcon from "/icons/node.svg";
@@ -12,7 +10,6 @@ import firebaseIcon from "/icons/firebase.svg";
 import alpineIcon from "/icons/alpine-js.svg";
 import sanityIcon from "/icons/sanity.svg";
 import tailwindIcon from "/icons/tailwind.svg";
-import bootstrapIcon from "/icons/bootstrap.svg";
 import gitIcon from "/icons/git.svg";
 import vsIcon from "/icons/vs.svg";
 import netlifyIcon from "/icons/netlify.svg";
@@ -22,7 +19,6 @@ import msIcon from "/icons/ms.svg";
 import aiIcon from "/icons/ai.svg";
 import psIcon from "/icons/ps.svg";
 import lrIcon from "/icons/lr.svg";
-import xdIcon from "/icons/xd.svg";
 import filmoraIcon from "/icons/filmora.svg";
 import Collapse from "../components/collapse";
 import { Link } from "react-router-dom";
@@ -38,8 +34,6 @@ export default function Home() {
           fullStack: 0
      })
      const programArray = [
-          { name: "JavaScript", icon: jsIcon },
-          { name: "TypeScript", icon: tsIcon },
           { name: "Next", icon: nextIcon },
           { name: "React", icon: reactIcon },
           { name: "Alpine", icon: alpineIcon },
@@ -48,8 +42,7 @@ export default function Home() {
           { name: "MongoDB", icon: mongodbIcon },
           { name: "Sanity", icon: sanityIcon },
           { name: "Firebase", icon: firebaseIcon },
-          { name: "TailwindCSS", icon: tailwindIcon },
-          { name: "Bootstrap", icon: bootstrapIcon }
+          { name: "TailwindCSS", icon: tailwindIcon }
      ];
      const toolArray = [
           { name: "Git", icon: gitIcon },
@@ -63,11 +56,10 @@ export default function Home() {
           { name: "illustrator", icon: aiIcon },
           { name: "Photoshop", icon: psIcon },
           { name: "Lightroom", icon: lrIcon },
-          { name: "Adobe Xd", icon: xdIcon },
           { name: "Filmora", icon: filmoraIcon }
      ];
      const experience = [
-          { designation: "Web Developer", company: "Fiverr", website: "fiverr.com/tech_infiny", duration: "2021 - Present", location: "Remote", keyword: ["JavaScript", "TypeScript", "Next", "React", "Alpine", "Node", "Firebase", "TailwindCSS", "Figma"], description: "I have been working as a freelance developer since 2019 locally. After leaving Spinner Tech, I start working as a freelance developer on Fiverr. And get chance to work on various projects with various developers." },
+          { designation: "Web Developer", company: "Fiverr", website: "fiverr.com/tech_infiny", duration: "2021 - Present", location: "Remote", keyword: ["JavaScript", "TypeScript", "Next", "React", "Alpine", "Node", "Firebase", "TailwindCSS", "MongoDB", "Sanity", "Figma"], description: "I have been working as a freelance developer since 2019 locally. After leaving Spinner Tech, I start working as a freelance developer on Fiverr. And get chance to work on various projects with various developers." },
           { designation: "Intern", company: "Bangladesh Railway", website: "railway.gov.bd", duration: "2021 - 2022", location: "Chattogram, Bangladesh", keyword: ["Networking", "CTC", "MS Office"], description: "It's part of my Diploma course. I learn how an organization works and manages manpower. I got the opportunity to lead a team during the training period. I also learn about communication networks and media over there." },
           { designation: "Web Designer", company: "Spinner Tech Ltd", website: "spinnertech.dev", duration: "2021 - 2021", location: "Chattogram, Bangladesh", keyword: ["JavaScript", "JQuery", "Bootstrap", "Photoshop"], description: "In Spinner Tech Ltd, I explore myself. And learn to work together in a team. I also learn to handle projects on an IT farm. I enjoyed my 3 months with some awesome projects and teammates." },
      ]
