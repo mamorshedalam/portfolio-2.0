@@ -25,7 +25,7 @@ export default function RootLayout() {
      return (
           <>
                <header className={`${show ? "bg-neutral-800" : "bg-transparent"} wow fadeInDown fixed flex flex-wrap justify-between items-center w-full backdrop-blur-sm xl:px-12 sm:px-6 px-4 xs:py-4 py-2 z-50 transition-all duration-700`}>
-                    <Link to={`/`} className="flex items-center gap-1.5 uppercase font-bold tracking-wider xs:text-2xl text-xl"><img className="h-7 w-fit" src={logoIcon} alt="icon" /> morshed alam</Link>
+                    <Link to={`/`} className="flex items-center gap-1.5 uppercase font-bold tracking-wider xs:text-2xl text-xl"><img className="h-7 w-auto" src={logoIcon} alt="icon" /> morshed alam</Link>
                     <nav className={`${show ? "opacity-100 visible" : "opacity-0 invisible"} lg:relative absolute left-0 top-full lg:bg-transparent bg-neutral-800/50 lg:opacity-100 lg:visible lg:w-auto w-full lg:h-auto h-screen font-semibold xs:text-lg text-base z-40 sl-animated-xl`}>
                          <div onClick={() => { show ? setShow(false) : setShow(true) }} className="absolute inset-0 lg:hidden block w-full h-full z-20"></div>
                          <ul className={`${show ? "w-1/2" : "w-0"} sl-nav relative flex lg:flex-row flex-col item-center lg:w-auto lg:h-auto h-screen lg:bg-transparent bg-neutral-800 xl:gap-9 sm:gap-6 xs:gap-4 gap-3 lg:px-0 sm:px-6 px-4 lg:py-0 sm:py-4 z-30`}>
